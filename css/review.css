@@ -11,3 +11,11 @@ header {
     text-align: center;
     padding: 20px;
 }
+/* Reviews Section */
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
