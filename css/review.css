@@ -19,3 +19,22 @@ header {
     padding: 30px;
     flex-wrap: wrap;
 }
+/* Review Cards */
+.review-card {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.review-card h3 {
+    color: #B77466;
+}
