@@ -4,7 +4,13 @@ body{
     overflow-x: hidden;
     font-family: "Titillium Web", sans-serif; 
 }
-
+/* Hero Section */
+.main-hero-section{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/home-bg-img1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
 
 /* Tagline */
