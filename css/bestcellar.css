@@ -1,0 +1,328 @@
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      :root {
+          --primary: #c0392b;
+          --primary-dark: #922b21;
+          --gold: #d4a017;
+          --gold-light: #f5e6c0;
+          --cream: #fdf6ec;
+          --dark: #2c1a0e;
+          --text: #4a2f1a;
+          --card-bg: #fff9f2;
+          --shadow: rgba(44, 26, 14, 0.12);
+      }
+
+      body {
+          font-family: 'Titillium Web', sans-serif;
+          background-color: var(--cream);
+          color: var(--text);
+      }
+
+      /* ── HERO BANNER ── */
+      .bestsellers-hero {
+          background: linear-gradient(135deg, #2c1a0e 0%, #5c2d0e 50%, #922b21 100%);
+          padding: 64px 48px 56px;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+      }
+
+      .bestsellers-hero::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background-image:
+              radial-gradient(circle at 20% 50%, rgba(212, 160, 23, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 80% 30%, rgba(192, 57, 43, 0.2) 0%, transparent 50%);
+      }
+
+      .hero-badge {
+          display: inline-block;
+          background: var(--gold);
+          color: #2c1a0e;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 2.5px;
+          text-transform: uppercase;
+          padding: 6px 18px;
+          border-radius: 20px;
+          margin-bottom: 18px;
+          position: relative;
+      }
+
+      .bestsellers-hero h1 {
+          font-family: 'Playfair Display', serif;
+          font-size: 52px;
+          color: #fff;
+          font-weight: 700;
+          line-height: 1.15;
+          position: relative;
+          margin-bottom: 14px;
+      }
+
+      .bestsellers-hero h1 span {
+          color: var(--gold);
+      }
+
+      .bestsellers-hero p {
+          color: rgba(255, 255, 255, 0.75);
+          font-size: 16px;
+          font-weight: 300;
+          max-width: 480px;
+          margin: 0 auto;
+          position: relative;
+      }
+      .section-label {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 8px 48px 24px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+ 
+      .section-label::before,
+      .section-label::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(to right, transparent, #d4a017, transparent);
+      }
+ 
+      .section-label span {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        color: var(--gold);
+        white-space: nowrap;
+        font-style: italic;
+      }
+ 
+
+      /* ── FILTER TABS ── */
+      .filter-section {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+          padding: 32px 48px 20px;
+          flex-wrap: wrap;
+      }
+
+      .filter-btn {
+          padding: 9px 22px;
+          border: 2px solid #e0cdb8;
+          background: #fff;
+          color: var(--text);
+          border-radius: 24px;
+          font-family: 'Titillium Web', sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.2s;
+          letter-spacing: 0.3px;
+      }
+
+      .filter-btn:hover {
+          border-color: var(--primary);
+          color: var(--primary);
+      }
+
+      .filter-btn.active {
+          background: var(--primary);
+          border-color: var(--primary);
+          color: #fff;
+      }
+
+
+
+      /* ── BESTSELLER GRID ── */
+      .bestsellers-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+          gap: 28px;
+          padding: 0 48px 64px;
+          max-width: 1300px;
+          margin: 0 auto;
+      }
+
+      /* ── PRODUCT CARD ── */
+      .bs-card {
+          background: var(--card-bg);
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px var(--shadow);
+          transition: transform 0.25s, box-shadow 0.25s;
+          position: relative;
+      }
+
+      .bs-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 36px rgba(24, 17, 12, 0.18);
+      }
+
+      /* Rank badge */
+      .rank-badge {
+          position: absolute;
+          top: 14px;
+          left: 14px;
+          width: 70px;
+          height: 25px;
+          border-radius: 10px;
+          background: var(--primary);
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 400;
+          font-size: 13px;
+          z-index: 2;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+          background-color: #fffefe;
+      }
+
+      .rank-badge.bronze {
+          background:rgb(239, 211, 211);
+          color: #000000;
+      }
+
+      /* Hot label */
+      .hot-label {
+          position: absolute;
+          top: 14px;
+          right: 14px;
+          background: #e74c3c;
+          color: #fff;
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          padding: 4px 10px;
+          border-radius: 10px;
+          z-index: 2;
+      }
+
+      .new-label {
+          background: #27ae60;
+      }
+
+      .card-img-wrap {
+          height: 200px;
+          overflow: hidden;
+          background: #f0e6d6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .card-img-wrap img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s ease;
+      }
+
+      .bs-card:hover .card-img-wrap img {
+          transform: scale(1.06);
+      }
+
+      .card-body {
+          padding: 18px 20px 20px;
+      }
+
+      .card-body h3 {
+          font-family: 'Playfair Display', serif;
+          font-size: 20px;
+          color: var(--dark);
+          margin-bottom: 5px;
+      }
+
+      .card-body p {
+          font-size: 13.5px;
+          color: #7a5c3e;
+          margin-bottom: 12px;
+          font-weight: 300;
+      }
+
+      /* Stars */
+      .stars {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          margin-bottom: 14px;
+      }
+
+      .star {
+          color: var(--gold);
+          font-size: 14px;
+      }
+
+      .rating-count {
+          font-size: 12px;
+          color: #9e7d5e;
+          margin-left: 4px;
+      }
+
+      /* Price + CTA */
+      .card-footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .price-wrap {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .price {
+          font-size: 20px;
+          font-weight: 700;
+          color: var(--primary);
+      }
+
+      .price-old {
+          font-size: 12px;
+          color: #aaa;
+          text-decoration: line-through;
+      }
+
+      .add-btn {
+          background: var(--primary);
+       ;   color: #fff;
+          border: none;
+          padding: 9px 18px;
+          border-radius: 24px;
+          font-family: 'Titillium Web', sans-serif;
+          font-size: 13px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background 0.2s, transform 0.1s;
+          letter-spacing: 0.4px;
+
+      }
+
+      .add-btn:hover {
+          background: var(--primary-dark);
+          transform: scale(1.03);
+      }
+      
+button {
+        background: rgb(113, 18, 18);
+          color: #fff;
+          border: none;
+          padding: 9px 18px;
+          border-radius: 24px;
+          font-family: 'Titillium Web', sans-serif;
+          font-size: 13px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background 0.2s, transform 0.1s;
+          letter-spacing: 0.4px;
+}
+
+button:hover {
+    background: #4c531c;
+}
