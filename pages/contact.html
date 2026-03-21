@@ -16,6 +16,7 @@
           pricing, or anything else, our team is ready to answer all your
           questions.
         </p>
+        <div class="btn-link-hero">
         <div class="facility-section">
           <a href="#place-order-unique" class="btn-head-three">
           <div class="facility-section-item">
@@ -46,15 +47,19 @@
           </div>
           </a>
         </div>
+        </div>
       </div>  
-      <hr/>
+     
+      <br/>
+      <br/>
    <!-- Place order -->
-       <div id="place-order-unique" >
+       <div id="place-order-unique" class="main-card-container-order" >
+        <div>
         <span class="message-heading">Place Order</span>
             <div class="order-sub-container">
             <div>
         <form>
-         <label for="name" class="label-order">Full Name</label><br />
+         <label for="name" class="label-order">Full Name *</label><br />
             <input
               type="text"
               id="name"
@@ -62,7 +67,7 @@
               class="enter-order"
               required
             /><br />
-            <label for="email" class="label-order">Email Address</label
+            <label for="email" class="label-order">Email Address *</label
             ><br />
             <input
               type="email"
@@ -71,14 +76,14 @@
               class="enter-order"
               required
             /><br />
-            <label for="phone" class="label-order">Phone Number</label><br />
+            <label for="phone" class="label-order">Phone Number *</label><br />
             <input
               type="text"
               id="phone"
               placeholder="Enter your phone number"
               class="enter-order" required/><br/>
               
-            <label for="customer-address" class="label-order">Shipping Address</label><br />
+            <label for="customer-address" class="label-order">Shipping Address *</label><br />
             <input
               type="text"
               id="customer-address"
@@ -471,14 +476,14 @@
               <option>Hingoli</option>
               <option>Akola</option>
              </select> <br/>
-              <label for="delivery" class="label-order">Delivery Type</label>
+              <label for="delivery" class="label-order">Delivery Type *</label>
              <select id="delivery" required class="enter-order" style="display: block;" >
               <option></option>
               <option>Standard Delivery(3-5 days)</option>
               <option>Express Delivery(1-2 days)</option>
               <option>Pre-book Delivery(1 month - concession)</option>
              </select> <br/>
-             <label for="delivery" class="label-order">Payment Type</label>
+             <label for="delivery" class="label-order">Payment Type *</label>
              <select id="delivery" required class="enter-order" style="display: block;" >
               <option></option>
               <option>UPI</option>
@@ -503,6 +508,7 @@
 
 
             </div>
+        </div>    
             
        </div>
        <hr/>      
@@ -589,6 +595,7 @@
         </div>
         </div>
       </div>
+      <br/>
       <hr />
 
          <!-- Send a message -->
@@ -596,7 +603,7 @@
         <span class="message-heading">Send us a Message</span>
         <div class="message-section">
           <form>
-            <label for="username" class="label-text">Full Name</label><br />
+            <label for="username" class="label-text">Full Name *</label><br />
             <input
               type="text"
               id="username"
@@ -604,7 +611,7 @@
               class="enter-text"
               required
             /><br />
-            <label for="useremail" class="label-text">Email Address</label
+            <label for="useremail" class="label-text">Email Address *</label
             ><br />
             <input
               type="email"
@@ -613,7 +620,7 @@
               class="enter-text"
               required
             /><br />
-            <label for="userphone" class="label-text">Phone Number</label><br />
+            <label for="userphone" class="label-text">Phone Number *</label><br />
             <input
               type="tel"
               id="userphone"
@@ -648,7 +655,7 @@
               </div>
             </div>
             <br />
-            <label for="usermessage" class="label-text">Message us</label><br />
+            <label for="usermessage" class="label-text">Message us *</label><br />
             <textarea
               id="usermessage"
               class="enter-text"
