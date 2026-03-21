@@ -16,7 +16,7 @@ body {
     gap: 12px;
     padding: 10px;
     background: #f5f5f5;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
     scroll-behavior: smooth;
 }
 
@@ -120,6 +120,23 @@ button:hover {
     color: #ffffff;
 }
 
+<<<<<<< HEAD
+.cat-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 28px 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cat-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e8e0d5;
+=======
 /* Footer */
 .footer{
     background: #111;
@@ -248,4 +265,5 @@ button:hover {
 .desc-box{
      font-weight: 400;
      font-size: 16px;
+>>>>>>> 3d7346617eefd67a5c1dc22f83ed14db8468212f
 }

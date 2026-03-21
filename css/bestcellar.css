@@ -289,25 +289,6 @@
           text-decoration: line-through;
       }
 
-      .add-btn {
-          background: var(--primary);
-       ;   color: #fff;
-          border: none;
-          padding: 9px 18px;
-          border-radius: 24px;
-          font-family: 'Titillium Web', sans-serif;
-          font-size: 13px;
-          font-weight: 600;
-          cursor: pointer;
-          transition: background 0.2s, transform 0.1s;
-          letter-spacing: 0.4px;
-
-      }
-
-      .add-btn:hover {
-          background: var(--primary-dark);
-          transform: scale(1.03);
-      }
       
 button {
         background: rgb(113, 18, 18);
