@@ -14,10 +14,11 @@
   <body>
     <div class="body-bg">
     <div>
-      <!-- navbar -->
+      <!-- Main div-->
 
       <div class="main-containe">
-    <div class="navbar-main-container">
+        <!-- navbar -->
+    <!-- <div class="navbar-main-container">
         <div class="logo-container">
             <img src="./../images/main-logo-icon.png" alt="logo" height="80px" class="main-logo">
             <b class="project-name">Annapurna Hub</b>
@@ -35,7 +36,7 @@
             <a href="./../pages/login.html" class="nav-text-container">Login</a>
             <a href="./../pages/signup.html" class="nav-text-container">Sign Up</a>
         </div>
-    </div>
+    </div> -->
   <!-- Hero section -->
       <div class="bg-img-head-section">
       <div class="main-head-section">
@@ -45,7 +46,11 @@
           pricing, or anything else, our team is ready to answer all your
           questions.
         </p>
-        <div class="btn-link-hero">
+        
+      </div> 
+      </div>  
+
+      <div class="btn-link-hero-img">
         <div class="facility-section">
           <a href="#place-order-unique" class="btn-head-three">
           <div class="facility-section-item">
@@ -77,19 +82,17 @@
           </a>
         </div>
         </div>
-      </div> 
-      </div>  
      
       <br/>
       <br/>
    <!-- Place order -->
-       <div class="bg-place-order">
+       <div >
        <div id="place-order-unique" class="main-card-container-order">
         <div>
         <span class="message-heading">Place Order</span>
             <div class="order-sub-container">
-            <div>
-        <form>
+            
+               <form>
          <label for="name" class="label-order">Full Name *</label><br />
             <input
               type="text"
@@ -126,11 +129,7 @@
               id="product-date"
               placeholder="Enter booking date"
               class="enter-order" required/><br/>
-              <div class="enter-gender">
-              <label for="gender" class="label-order">Gender</label><br/>
-              <input type="radio" name="gender" id="gender" />Male
-              <input type="radio" name="gender" id="gender" />Female
-              <input type="radio" name="gender" id="gender" />Other</div>
+             
 
                <div class="product-item-form-container">
               <span class="product-item-form-head-name">Select Products</span>
@@ -530,14 +529,10 @@
             ></textarea
             ><br />
             <input type="checkbox"  required checked/><span class="label-order">I accept all terms and conditions.</span><br/>
-            </div>
+            
 
          <button class="order-formbtn"><img src="./../images/contact-page-img/right-arrow-cn.svg" alt="right-arrow" height="20px"/> Order Now </button>
-        </form>
-
-
-
-
+               </form>
             </div>
         </div>    
             
@@ -771,6 +766,7 @@
       </div>
 
      </footer>
+     
      </div>
     </div>
      </body>
