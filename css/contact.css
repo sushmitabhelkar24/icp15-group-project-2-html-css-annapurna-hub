@@ -1,5 +1,5 @@
 body{
-    background-color: #E4E0E1;
+    background-color: rgb(244, 230, 230);
     margin:0;
     padding: 0;
 }
@@ -20,21 +20,42 @@ body{
 }
 .main-heading-info{
     padding-top: 30px;
-   font-size: 30px;
+   font-size: 40px;
    font-weight: 600;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .main-heading-info-para{
-    opacity: 0.9;
-    font-size: 16px;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 600;
+    
 
 }
+.btn-link-hero {
+          background: linear-gradient(135deg, #2c1a0e 0%, #5c2d0e 50%, #922b21 100%);
+          width:1300px;
+          padding: 10px 5px 15px 5px;
+          border-radius: 50px;
+          overflow: hidden;
+      }
+
+      .btn-link-hero::before {
+          inset: 0;
+          background-image:
+              radial-gradient(circle at 20% 50%, rgba(212, 160, 23, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 80% 30%, rgba(192, 57, 43, 0.2) 0%, transparent 50%);
+      }
+
 .facility-section{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     width: 100%;
     margin-top: 10px;
+}
+.btn-head-three{
+    text-decoration: none;
+    color: black;
 }
 .facility-section-item{
     font-weight: 600;
@@ -54,7 +75,7 @@ body{
     transition: 0.3s;
 }
 .facility-section-item:hover{
-    background-color: #AB886D;
+    background: #4b5320;
     color:white;
     transform: translateX(5px);
 }
@@ -63,13 +84,14 @@ body{
 }
 .title-heading{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .title-heading-sub{
     display: block;
     text-align: center;
-    font-size:16px;
+    font-weight: 600;
+    font-size:20px;
     opacity: 0.8;
 }
 .location-main-info-web{
@@ -99,7 +121,7 @@ body{
 .sub-location-section-content{
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     margin-top: 30px;
 }
@@ -114,14 +136,15 @@ body{
 .sub-location-section-city-content{
     display: flex;
     flex-direction: column;
-    border:5px solid #AB886D;
     width: 230px;
     height: 250px;
-    border-radius: 10px;
-    background-color:#E4E0E1 ;
     cursor: pointer;
-    box-shadow: -5px 5px 2px 0px gray ;
     transition: 0.3s;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+    background: #fff;
 }
 .sub-location-section-city-content:hover{
     transform: translatey(-5px);
@@ -134,19 +157,25 @@ body{
     color:black;
     margin-left: 5px;
 }
+.main-card-container-order{
+    background-color: #fff;
+    width:600px;
+    padding: 20px;
+    border-radius: 30px;
+    margin:10px auto;
+     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
 .order-sub-container{
     display: flex;
-    flex-direction: row;
-    margin-left: 180px;
-    width: 1200px;
-    border: 2px solid #493628;
+    flex-direction: column;
+    margin-left: 40px;
+    width: 550px;
     margin-top: 30px;
     padding: 10px;
     border-radius: 10px;
 }
 .label-order{
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
     font-weight: 600;
     opacity: 0.8;
 
@@ -161,12 +190,14 @@ body{
     font-size: 14px;
     padding-left: 5px;
 }
-.product-item-form-container{
-    margin-left: 60px;
-    background-color: rgb(223, 222, 221);
-    padding: 10px;
-    box-shadow: 2px 2px 2px 2px gray;
+.enter-gender{
+   margin-top: 10px;
     
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
 }
 .product-head-info{
     font-size: 30px;
@@ -181,6 +212,9 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     opacity: 0.8;
 }
+.product-item-form-container{
+    margin:20px 0px;
+}
 .items-sequence{
     display: flex;
     flex-direction: column;
@@ -191,17 +225,16 @@ body{
     margin-left: 2px;
 }
 .order-formbtn{
-    
-    width: 800px;
+    width: 450px;
     border-radius: 20px;
     font-size: 20px;
     padding: 10px;
-    background-color: #493628;
+    background-color:rgb(113, 18, 18);
     color: white;
     cursor: pointer;
     transition: 0.2s;
-    display: block;
-    margin: 20px auto;
+    margin:10px 0px 0px  30px;
+    
 }
 .order-formbtn:hover{
     box-shadow: 5px 5px 5px 0 gray;
@@ -222,6 +255,14 @@ body{
     font-size: 30px;
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.message-container{
+    background-color: #fff;
+    width:600px;
+    padding: 20px;
+    margin:40px auto 20px auto;
+     border-radius: 30px;
+     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
 }
 .message-section{
        display: flex;
@@ -292,7 +333,7 @@ body{
     font-size: 16px;
     font-weight: 700;
     color: white;
-    background-color: #493628;
+    background: rgb(113, 18, 18);
     cursor: pointer;
 }
 

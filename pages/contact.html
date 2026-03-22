@@ -6,6 +6,7 @@
   </head>
   <body>
     <div>
+      <!-- navbar -->
       <div class="navbar">Contact</div>
   <!-- Hero section -->
       <div class="main-head-section">
@@ -15,7 +16,9 @@
           pricing, or anything else, our team is ready to answer all your
           questions.
         </p>
+        <div class="btn-link-hero">
         <div class="facility-section">
+          <a href="#place-order-unique" class="btn-head-three">
           <div class="facility-section-item">
             <img
               src="./../images/contact-page-img/contact-page-shipped.svg"
@@ -24,6 +27,8 @@
             />
             Place Order
           </div>
+          </a>
+          <a href="#send-message-unique" class="btn-head-three">
           <div class="facility-section-item">
             <img
               src="./../images/contact-page-img/contact-page-message.svg"
@@ -31,6 +36,8 @@
               height="18px"
             />Send message
           </div>
+          </a>
+          <a href="#our-location-unique" class="btn-head-three">
           <div class="facility-section-item">
             <img
               src="./../images/contact-page-img/contact-page-location.svg"
@@ -38,10 +45,475 @@
               height="18px"
             />Our Location
           </div>
+          </a>
         </div>
-      </div>    
+        </div>
+      </div>  
+     
+      <br/>
+      <br/>
+   <!-- Place order -->
+       <div id="place-order-unique" class="main-card-container-order" >
+        <div>
+        <span class="message-heading">Place Order</span>
+            <div class="order-sub-container">
+            <div>
+        <form>
+         <label for="name" class="label-order">Full Name *</label><br />
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="enter-order"
+              required
+            /><br />
+            <label for="email" class="label-order">Email Address *</label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="enter-order"
+              required
+            /><br />
+            <label for="phone" class="label-order">Phone Number *</label><br />
+            <input
+              type="text"
+              id="phone"
+              placeholder="Enter your phone number"
+              class="enter-order" required/><br/>
+              
+            <label for="customer-address" class="label-order">Shipping Address *</label><br />
+            <input
+              type="text"
+              id="customer-address"
+              placeholder="Enter your shipping address"
+              class="enter-order" required/><br/>
+               <label for="product-date" class="label-order">Ordered date</label><br />
+            <input
+              type="date"
+              id="product-date"
+              placeholder="Enter booking date"
+              class="enter-order" required/><br/>
+              <div class="enter-gender">
+              <label for="gender" class="label-order">Gender</label><br/>
+              <input type="radio" name="gender" id="gender" />Male
+              <input type="radio" name="gender" id="gender" />Female
+              <input type="radio" name="gender" id="gender" />Other</div>
+
+               <div class="product-item-form-container">
+              <span class="product-item-form-head-name">Select Products</span>
+                  
+                    <div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Pickles
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Mango
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Lemon
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Amla
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Green Chilli
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Carrot
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+
+</div>
+
+                    <div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Chutneys
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Dry Coconut
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Garlic
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Kokum
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Til
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Javas
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+
+</div>
+                     
+      <div class="category">
+
+            <!-- Main Item -->
+                  <div>
+                   <label class="product-item-form-head-name">
+    <input type="checkbox">
+    Traditional Items 
+                   </label>&nbsp;&nbsp;
+                  </div>
+
+             <!-- Dropdown -->
+                  <div>
+  <details class="dropdown">
+    <summary>Select Items</summary>
+
+    <div class="items-sequence">
+
+      <label>
+        <input type="checkbox"> Kurdai
+        <input type="number" placeholder="Qty">
+      </label>
+
+      <label>
+        <input type="checkbox"> Shevaya
+        <input type="number" placeholder="Qty">
+      </label>
+
+      <label>
+        <input type="checkbox"> Rice Vadi
+        <input type="number" placeholder="Qty">
+      </label>
+
+      <label>
+        <input type="checkbox"> Farali Chakli
+        <input type="number" placeholder="Qty">
+      </label>
+
+      <label>
+        <input type="checkbox"> Aloo Papadi
+        <input type="number" placeholder="Qty">
+      </label>
+
+    </div>
+
+  </details>
+                  </div>
+
+      </div>
+                      
+                    <div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Snacks Items
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Chivda
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Sev
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Namkin
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Chakli
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Bhakarvadi
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+
+                    </div>
+
+                     <div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Khakra
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Jeera
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Multigram
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Methi
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Plain
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+
+</div>
+                       
+                    <div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Masala
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Goda
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Garam
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Kala
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Dhana-powder
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Red-chilli
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+
+</div>
+
+                    <div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Ready-mix Powder
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Guava
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Lemon
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Mango
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Pin-apple
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Apple
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+
+</div>
+<div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Ghee
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Cow ghee
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Buffalo ghee
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Gir ghee
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+
+</div>
+                    
+            </div>
+
+               <label for="product-number" class="label-order">Numbers of product Ordered</label><br />
+            <input
+              type="number"
+              id="product-number"
+              placeholder="Enter no of products"
+              class="enter-order" required/><br/>
+              <label for="branch" class="label-order">Select Branch</label>
+             <select id="branch" required class="enter-order" style="display: block;" >
+              <option></option>
+              <option>Nashik</option>
+              <option>Nagpur</option>
+              <option>Mumbai</option>
+              <option>Hingoli</option>
+              <option>Akola</option>
+             </select> <br/>
+              <label for="delivery" class="label-order">Delivery Type *</label>
+             <select id="delivery" required class="enter-order" style="display: block;" >
+              <option></option>
+              <option>Standard Delivery(3-5 days)</option>
+              <option>Express Delivery(1-2 days)</option>
+              <option>Pre-book Delivery(1 month - concession)</option>
+             </select> <br/>
+             <label for="delivery" class="label-order">Payment Type *</label>
+             <select id="delivery" required class="enter-order" style="display: block;" >
+              <option></option>
+              <option>UPI</option>
+              <option>Credit card</option>
+              <option>Net-banking</option>
+              <option>Cash on delivery</option>
+             </select><br/>
+              <label for="userthought" class="label-order">Special Instructions</label><br />
+            <textarea
+              id="userthought"
+              class="enter-order"
+              placeholder="Write your instructions here......." 
+            ></textarea
+            ><br />
+            <input type="checkbox"  required checked/><span class="label-order">I accept all terms and conditions.</span><br/>
+            </div>
+
+         <button class="order-formbtn"><img src="./../images/contact-page-img/right-arrow-cn.svg" alt="right-arrow" height="20px"/> Order Now </button>
+        </form>
+
+
+
+
+            </div>
+        </div>    
+            
+       </div>
+       <hr/>      
   <!-- Location -->
-      <div>
+      <div id="our-location-unique">
         <div class="title-heading-container">
           <h1 class="title-heading">Annapurna Hub Main Branch</h1>
           <span class="title-heading-sub"
@@ -123,337 +595,38 @@
         </div>
         </div>
       </div>
+      <br/>
       <hr />
- 
-        <!-- Place order -->
-       <div>
-        <span class="message-heading">Place Order</span>
-            <div class="order-sub-container">
-            <div>
-        <form>
-         <label for="name" class="label-order">Full Name</label><br />
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter your name"
-              class="enter-order"
-              required
-            /><br />
-            <label for="email" class="label-order">Email Address</label
-            ><br />
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              class="enter-order"
-              required
-            /><br />
-            <label for="phone" class="label-order">Phone Number</label><br />
-            <input
-              type="text"
-              id="phone"
-              placeholder="Enter your phone number"
-              class="enter-order" required/><br/>
-            <label for="customer-address" class="label-order">Shipping Address</label><br />
-            <input
-              type="text"
-              id="customer-address"
-              placeholder="Enter your shipping address"
-              class="enter-order" required/><br/>
-               <label for="product-date" class="label-order">Ordered date</label><br />
-            <input
-              type="date"
-              id="product-date"
-              placeholder="Enter booking date"
-              class="enter-order" required/><br/>
-               <label for="product-number" class="label-order">Numbers of product Ordered</label><br />
-            <input
-              type="number"
-              id="product-number"
-              placeholder="Enter no of products"
-              class="enter-order" required/><br/>
-              <label for="branch" class="label-order">Select Branch</label>
-             <select id="branch" required class="enter-order" style="display: block;" >
-              <option></option>
-              <option>Nashik</option>
-              <option>Nagpur</option>
-              <option>Mumbai</option>
-              <option>Hingoli</option>
-              <option>Akola</option>
-             </select> <br/>
-              <label for="delivery" class="label-order">Delivery Type</label>
-             <select id="delivery" required class="enter-order" style="display: block;" >
-              <option></option>
-              <option>Standard Delivery(3-5 days)</option>
-              <option>Express Delivery(1-2 days)</option>
-              <option>Pre-book Delivery(1 month - concession)</option>
-             </select> <br/>
-             <label for="delivery" class="label-order">Payment Type</label>
-             <select id="delivery" required class="enter-order" style="display: block;" >
-              <option></option>
-              <option>UPI</option>
-              <option>Credit card</option>
-              <option>Net-banking</option>
-              <option>Cash on delivery</option>
-             </select><br/>
-              <label for="userthought" class="label-order">Special Instructions</label><br />
-            <textarea
-              id="userthought"
-              class="enter-order"
-              placeholder="Write your instructions here......." 
-            ></textarea
-            ><br />
-            <input type="checkbox"  required checked/><span class="label-order">I accept all terms and conditions.</span><br/>
 
-             
-
-
-
-
-        </form>
-            </div>
-             <div class="product-item-form-container">
-              <span class="product-head-info">Select Products</span>
-                    <form>
-                      <div>
-                     <input type="checkbox" value="pickles" /><span class="product-item-form-head-name">Pickles</span> :
-                     <div class="items-sequence">
-                     <span>
-                     <input type="checkbox" value="Mango"/>Mango
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                     </span>
-                     <span>
-                     <input type="checkbox" value="Lemon"/>Lemon
-                      <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                     </span>
-                     <span>
-                     <input type="checkbox" value="Amla"/>Amla
-                      <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                     </span>
-                     <span>
-                     <input type="checkbox" value="Green Chilli"/>Green Chilli
-                      <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                     </span>
-                     <span>
-                     <input type="checkbox" value="Carrot"/>Carrot
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    </div>
-                     </div>
-
-                     <div>
-                     <input type="checkbox" value="Chutneys"/><span class="product-item-form-head-name">Chutneys :</span>
-                      <div class="items-sequence">
-                     <span>
-                     <input type="checkbox" value="Dry Coconut"/>Dry Coconut
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Garlic"/>Garlic
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Kokum"/>Kokum
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Til"/>Til
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Javas"/>Javas
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    </div>
-                     </div>
-                     
-                     <div>
-                     <input type="checkbox" value="papad"/><span class="product-item-form-head-name">Traditional Items </span>
-                      <div class="items-sequence">
-                     <span>
-                     <input type="checkbox" value="Dry Coconut"/>Kurdai
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Garlic"/>Shevaya
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Kokum"/>Rice vadi
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Til"/>Farali chakli
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Javas"/>Aloo papadi
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    </div>
-                     </div>
-                      
-                    <div>
-                     <input type="checkbox" value="papad"/><span class="product-item-form-head-name">Snacks Items :</span>
-                      <div class="items-sequence">
-                     <span>
-                     <input type="checkbox" value="Dry Coconut"/>Chivda 
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Garlic"/>Sev
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Kokum"/>Namkin 
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Til"/>Chakli
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Javas"/>Bhakarvadi 
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    </div>
-                  </div>
-
-                     <div>
-                     <input type="checkbox" value="papad"/><span class="product-item-form-head-name">Khakra :</span>
-                      <div class="items-sequence">
-                     <span>
-                     <input type="checkbox" value="Dry Coconut"/>Jeera 
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Garlic"/>Multigram
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Kokum"/>Methi 
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Til"/>Plain
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    </div>
-                     </div>
-                       
-                     <div>
-                     <input type="checkbox" value="papad"/><span class="product-item-form-head-name">Masala :</span>
-                      <div class="items-sequence">
-                     <span>
-                     <input type="checkbox" value="Dry Coconut"/>Goda
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Garlic"/>Garam
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Kokum"/>Kala
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Til"/>Dhana-powder
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Javas"/>Red-chilli
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    </div>
-                     </div>
-
-                     <div>
-                     <input type="checkbox" value="papad"/><span class="product-item-form-head-name">Ready-mix Powder :</span>
-                      <div class="items-sequence">
-                     <span>
-                     <input type="checkbox" value="Dry Coconut"/>Guava 
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Garlic"/>Lemon
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Kokum"/>Mango 
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Til"/>Pin-apple
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Javas"/>Apple 
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    </div>
-                     </div>
-
-                     <div>
-                     <input type="checkbox" value="papad"/><span class="product-item-form-head-name">Ghee :</span>
-                      <div class="items-sequence">
-                     <span>
-                     <input type="checkbox" value="Kokum"/>Cow ghee
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Til"/>Buffalo ghee
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    <span>
-                     <input type="checkbox" value="Javas"/>Gir ghee
-                     <input type="number" placeholder="Enter quantity" class="enter-quantity-product-item"/>
-                    </span>
-                    </div>
-                     </div>
-                   </form>
-            </div>
-              <div class="images-for-form">
-              
-              <img src="./../images/shevaya.jpg" alt="snack-img" height="150px"  width="250px"/>
-              <img src="./../images/guava-powder.jpg" alt="snack-img" height="150px"  width="250px"/>
-              <img src="./../images/rice-papad.jpg" alt="snack-img" height="150px"  width="250px"/>
-              <img src="./../images/javas.jpg" alt="snack-img" height="150px"  width="250px"/>
-              <img src="./../images/red-chilli.webp" alt="snack-img" height="150px"  width="250px"/>
-              <img src="./../images/ready-mix.avif" alt="snack-img" height="150px"  width="250px"/>
-              <img src="./../images/shevaya.jpg" alt="snack-img" height="150px"  width="250px"/>
-             
-
-            </div>
-            </div>
-            <button class="order-formbtn"><img src="./../images/contact-page-img/right-arrow-cn.svg" alt="right-arrow" height="20px"/> Order Now </button>
-       </div>
-       <hr/>
          <!-- Send a message -->
-      <div class="message-container">
+      <div id="send-message-unique" class="message-container">
         <span class="message-heading">Send us a Message</span>
         <div class="message-section">
           <form>
-            <label for="username" class="label-text">Full Name</label><br />
+            <label for="username" class="label-text">Full Name *</label><br />
             <input
               type="text"
               id="username"
               placeholder="Enter your name"
               class="enter-text"
+              required
             /><br />
-            <label for="useremail" class="label-text">Email Address</label
+            <label for="useremail" class="label-text">Email Address *</label
             ><br />
             <input
               type="email"
               id="useremail"
               placeholder="Enter your email"
               class="enter-text"
+              required
             /><br />
-            <label for="userphone" class="label-text">Phone Number</label><br />
+            <label for="userphone" class="label-text">Phone Number *</label><br />
             <input
               type="tel"
               id="userphone"
               placeholder="Enter your phone number"
               class="enter-text"
+              required
             /><br />
             <div class="inquiry-feedback-sector">
               <div class="inquiry-circle-align" >
@@ -482,12 +655,13 @@
               </div>
             </div>
             <br />
-            <label for="usermessage" class="label-text">Message us</label><br />
+            <label for="usermessage" class="label-text">Message us *</label><br />
             <textarea
               id="usermessage"
               class="enter-text"
               placeholder="Write your message here regarding above options inquiry,support,collaboration,feedback......."
-            ></textarea
+              required
+              ></textarea
             ><br />
             <button class="message-btn">Send Message</button>
           </form>
@@ -495,14 +669,7 @@
       </div>
     </div>
 
-        <!-- Footer section -->
-    <div> hello everyone</div>
-    <div>Hi there.................</div>
-  </body>
-</html>
-      
-
-    <!-- Footer section -->
+     <!-- Footer section -->
      <footer class="footer">
 
   <div class="footer-container">

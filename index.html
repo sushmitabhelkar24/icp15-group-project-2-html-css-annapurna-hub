@@ -1,29 +1,20 @@
 <!doctype html>
-<html lang="mr">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomeMade Hub - Home Page</title>
-
-    <!-- CSS -->
+    <title>Home Page</title>
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/home.css" />
-
-    <!-- Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
 
     <!-- ══════════════ NAVBAR ══════════════ -->
+    <input type="checkbox" id="nav-toggle" hidden>
     <div class="main-container" id="mainNav">
-
       <img src="./images/main-logo-icon.png" class="main-logo-icon" alt="HomeMade Hub" />
-
-      <!-- Hamburger label (mobile) — no JS needed -->
       <label for="nav-toggle" class="hamburger">
         <span></span><span></span><span></span>
       </label>
@@ -39,8 +30,8 @@
 
       <div class="nav-icons">
         <div class="nav-menu">
-          <a href="" class="menu">Login</a>
-          <a href="" class="menu">Sign up</a>
+          <a href="./pages/login.html" class="menu">Login</a>
+          <a href="./pages/sign-up.html" class="menu">Sign up</a>
         </div>
 
         <!-- Search -->
@@ -71,10 +62,10 @@
 
       <div class="tagline-container">
         <h1 class="tagline">From Our Kitchen to Your Home</h1>
-        <p class="description">
-          We bring you authentic homemade flavors crafted with care. From spicy pickles to healthy
-          snacks, every product is made using traditional methods and high-quality ingredients.
-        </p>
+        <p class="description">We bring you authentic homemade flavors crafted with care. 
+        From spicy pickles to healthy snacks, 
+        every product is made using traditional methods 
+        and high-quality ingredients.</p>
       </div>
 
       <!-- Statistics -->
@@ -100,10 +91,8 @@
       </div>
 
     </div>
-    <!-- ══════════════ END HERO ══════════════ -->
-
-
-    <!-- Products Title + Scroll Nav -->
+   
+   
     <h1 class="title">Our Products</h1>
     <div class="scroll-nav">
       <a href="./pages/product.html">All</a>
@@ -118,12 +107,10 @@
       <a href="./pages/pickles.html">Pickles</a>
     </div>
 
-
     <!-- ══════════════ SUMMER SPECIAL ══════════════ -->
     <div class="main-card-container">
       <h2 class="heading">Summer Special</h2>
       <div class="card-container">
-
         <div class="card">
           <img src="./images/summer-img1.webp" class="card-img" alt="Pickles" />
           <h3>Pickles</h3>
@@ -132,7 +119,6 @@
             <img src="./images/arrow-icon.png" alt="→">
           </a>
         </div>
-
         <div class="card">
           <img src="./images/summer-img2.jpg" class="card-img" alt="Papad" />
           <h3>Papad</h3>
@@ -141,7 +127,6 @@
             <img src="./images/arrow-icon.png" alt="→">
           </a>
         </div>
-
         <div class="card">
           <img src="./images/summer-img3.webp" class="card-img" alt="Syrup" />
           <h3>Syrup</h3>
@@ -150,7 +135,6 @@
             <img src="./images/arrow-icon.png" alt="→">
           </a>
         </div>
-
         <div class="card">
           <img src="./images/summer-img4.png" class="card-img" alt="Papad" />
           <h3>Papad</h3>
@@ -159,10 +143,8 @@
             <img src="./images/arrow-icon.png" alt="→">
           </a>
         </div>
-
       </div>
     </div>
-
 
     <!-- ══════════════ MONSOON SPECIAL ══════════════ -->
     <div class="main-card-container">
@@ -208,12 +190,10 @@
       </div>
     </div>
 
-
     <!-- ══════════════ WINTER SPECIAL ══════════════ -->
     <div class="main-card-container">
       <h2 class="heading">Winter Special</h2>
       <div class="card-container">
-
         <div class="card">
           <img src="./images/winter-img1.jpg" class="card-img" alt="Sweets" />
           <h3>Sweets</h3>
@@ -222,7 +202,6 @@
             <img src="./images/arrow-icon.png" alt="→">
           </a>
         </div>
-
         <div class="card">
           <img src="./images/winter-img2.avif" class="card-img" alt="Tilgul" />
           <h3>Tilgul</h3>
@@ -231,7 +210,6 @@
             <img src="./images/arrow-icon.png" alt="→">
           </a>
         </div>
-
         <div class="card">
           <img src="./images/winter-img3.jpeg" class="card-img" alt="Dry Fruit Ladoo" />
           <h3>Dry Fruit Ladoo</h3>
@@ -240,7 +218,6 @@
             <img src="./images/arrow-icon.png" alt="→">
           </a>
         </div>
-
         <div class="card">
           <img src="./images/winter-img4.jpg" class="card-img" alt="Chikki" />
           <h3>Chikki</h3>
@@ -249,43 +226,35 @@
             <img src="./images/arrow-icon.png" alt="→">
           </a>
         </div>
-
       </div>
     </div>
-
 
     <!-- ══════════════ WHY US ══════════════ -->
     <section class="why-us">
       <h2 class="why-heading">Why Choose Us</h2>
       <div class="why-container">
-
         <div class="why-card">
           <img src="./images/homemade-icon.png" height="50px" alt="">
           <h3>100% Homemade</h3>
           <p>Made with love &amp; care</p>
         </div>
-
         <div class="why-card">
           <img src="./images/no-preserv-icon.png" height="50px" alt="">
           <h3>No Preservatives</h3>
           <p>Pure &amp; chemical free</p>
         </div>
-
         <div class="why-card">
           <img src="./images/fresh-ingre.png" height="50px" alt="">
           <h3>Fresh Ingredients</h3>
           <p>Quality raw materials</p>
         </div>
-
         <div class="why-card">
           <img src="./images/tradi-taste.png" height="50px" alt="">
           <h3>Traditional Taste</h3>
           <p>Authentic homemade flavor</p>
         </div>
-
       </div>
     </section>
-
 
     <!-- ══════════════ CTA ══════════════ -->
     <section class="cta">
@@ -297,43 +266,54 @@
       </div>
     </section>
 
-
     <!-- ══════════════ REVIEWS ══════════════ -->
     <section class="reviews">
       <h2 class="review-heading">Customer Reviews</h2>
       <div class="review-container">
-
         <div class="review-card">
-          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p class="stars"><img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px"></p>
           <p>Very tasty products</p>
           <h4>- Priya</h4>
         </div>
-
         <div class="review-card">
-          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p class="stars">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+          </p>
           <p>Feels like home food</p>
           <h4>- Rahul</h4>
         </div>
-
         <div class="review-card">
-          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p class="stars">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+          </p>
           <p>Quality is very good</p>
           <h4>- Sneha</h4>
         </div>
-
         <div class="review-card">
-          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p class="stars">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+            <img src="../images/star.png" width="12px">
+          </p>
           <p>Best homemade snacks</p>
           <h4>- Amit</h4>
         </div>
-
       </div>
     </section>
 
-
     <!-- ══════════════ FOOTER ══════════════ -->
     <footer class="footer">
-
       <div class="footer-container">
 
         <!-- About -->
@@ -384,8 +364,8 @@
         <!-- Contact -->
         <div class="footer-section">
           <h3>Contact</h3>
-         <a href="mailto:shravanisherkar@gmail.com" class="contact-link">
-             <img src="./images/gmail-icon.png" height="20px"> shravanisherkar@gmail.com
+         <a href="/cdn-cgi/l/email-protection#75061d071403141b1c061d10071e1407351218141c195b161a18" class="contact-link">
+             <img src="./images/gmail-icon.png" height="20px"> <span class="__cf_email__" data-cfemail="d3a0bba1b2a5b2bdbaa0bbb6a1b8b2a193b4beb2babffdb0bcbe">[email&#160;protected]</span>
          </a>
           <a href="tel:+919309326631" class="contact-link">
             <img src="./images/call-icon.png" height="15px" style="margin-top: 10px;"> +91 9309326631
@@ -406,15 +386,6 @@
             </a>
           </div>
         </div>
-
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 HomeMade Hub | All Rights Reserved | Made with love in Maharashtra</p>
-      </div>
-
-    </footer>
-    <!-- ══════════════ END FOOTER ══════════════ -->
-
-  </body>
-</html>
+     

@@ -2,6 +2,359 @@ body{
     margin: 0px;
     padding: 0px;
 }
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 20px;
+    background: rgb(244, 230, 230);
+}
+.main-container {
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 6px 24px;
+    box-sizing: border-box;
+
+
+    background: rgba(42, 6, 6, 0.97);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
+}
+
+/* ── LOGO ── */
+.main-logo-icon {
+    height: 90px;         
+    transition: height 0.35s ease;
+    flex-shrink: 0;
+}
+
+
+/* ── CENTER MENU ── */
+.nav-menu {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+    margin: 0 20px;
+}
+
+.menu {
+    text-decoration: none;
+    color: rgb(235, 125, 47);
+    font-weight: 700;
+    font-size: 18px;
+    white-space: nowrap;
+    position: relative;
+    padding-bottom: 4px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+/* Underline animation */
+.menu::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(235, 125, 47);
+    transition: width 0.25s ease;
+    border-radius: 2px;
+}
+
+.menu:hover {
+    color: #fff;
+}
+
+.menu:hover::after {
+    width: 100%;
+}
+
+/* Active page highlight */
+.menu.active {
+    color: #fff;
+    font-weight: 900;
+}
+
+.menu.active::after {
+    width: 100%;
+}
+
+/* ── RIGHT ICONS ── */
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 6px;
+}
+
+/* Login / Signup buttons */
+.nav-icons .nav-menu {
+    gap: 14px;
+    flex: unset;
+    margin: 0;
+}
+
+.nav-icons .menu {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border: 2px solid rgb(235, 125, 47);
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-icons .menu:hover {
+    background: rgb(235, 125, 47);
+    color: #fff;
+}
+
+.nav-icons .menu::after {
+    display: none;
+}
+
+/* ── SEARCH WRAPPER ── */
+.search-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+}
+
+.search-dropdown {
+    position: absolute;
+    top: 46px;
+    right: 0;
+
+    width: 240px;
+    background: rgba(20, 10, 3, 0.97);
+    border: 1px solid rgba(224, 123, 46, 0.25);
+    border-radius: 10px;
+
+    display: none;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+
+.search-wrapper:hover .search-dropdown {
+    display: block;
+    animation: dropIn 0.2s ease;
+}
+
+@keyframes dropIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(224, 123, 46, 0.2);
+    background: transparent;
+    color: #f5ede0;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.search-input::placeholder {
+    color: #a07850;
+}
+
+.search-options a {
+    display: block;
+    padding: 9px 14px;
+    text-decoration: none;
+    color: #c9b090;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.search-options a:hover {
+    background: rgba(224, 123, 46, 0.15);
+    color: #f0a050;
+}
+
+/* ── CARD (navbar.css मध्ये ठेवलेले) ── */
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: darkorange;
+}
+
+/* ── HAMBURGER — pure CSS checkbox trick ── */
+
+#nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: rgb(235, 125, 47);
+    border-radius: 3px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+    .hamburger { display: flex; }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(30, 5, 5, 0.98);
+        gap: 0;
+        margin: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    #nav-toggle:checked + .main-container .nav-menu {
+        max-height: 400px;
+    }
+
+    /* X shape when open */
+    #nav-toggle:checked + .main-container .hamburger span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #nav-toggle:checked + .main-container .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    #nav-toggle:checked + .main-container .hamburger span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu {
+        padding: 14px 24px;
+        font-size: 17px;
+        border-bottom: 1px solid rgba(235, 125, 47, 0.1);
+    }
+
+    .menu::after { display: none; }
+
+    .nav-icons { gap: 12px; }
+    .nav-icons .nav-menu { display: none; }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Titillium Web", sans-serif; 
+    background-color: #E4E0E1;
+}
+
+/* Hero Section */
+.main-hero-section{
+    position: relative;
+    height: 100vh;
+    margin: 0;
+
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("../images/home-bg-img1.jpg");
+    background-size: cover;
+    background-position: center;
+
+    /* Statistics  */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   
+    padding-top: 15%;        
+    box-sizing: border-box;
+}
+
+
+    /* Tagline  */
+.tagline-container{
+    margin-left: 60px;
+    margin-top: 10px;   
+}
+
+.tagline{
+    margin: 0;
+    font-size: 30px;
+    color: rgb(212, 216, 145);
+    font-weight: 600;
+}
+
+.description{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* Statistics */
+.statistics-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.statistics-value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.statistics-number{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.statistics-number img{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
 .tag{
     position: absolute;
     bottom: 10px;
@@ -17,7 +370,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 80vh;        
-    background-color:rgb(235, 224, 224)
+    background-color:rgb(235, 224, 224);
+    margin-top: 70px;
 }
 
 .container {
@@ -148,3 +502,140 @@ button:hover {
     opacity: 0.8;
 }
 
+
+/* Footer */
+body {
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    background: rgba(30, 5, 5, 0.97);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+/* Container */
+.footer-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;  
+    gap: 14px;
+    padding: 0 24px;
+    align-items: start;
+}
+
+/* Sections */
+.footer-section h3{
+    margin-bottom: 8px;
+}
+
+.footer-section p{
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+/* About Section  */
+.about-row{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Logo */
+.logo-box img{
+    width: 120px;
+}
+
+/* Description */
+.desc-box{
+    max-width: 400px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Tagline */
+.tagline-2{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Links */
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li{
+    margin: 6px 0;
+}
+
+.footer-section ul li a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover{
+    color: white;
+}
+
+/* Contact */
+.contact-link{
+    display: block;
+    color: #ccc;
+    margin: 4px 0;
+    text-decoration: none;
+}
+
+.contact-link:hover{
+    color: white;
+}
+
+/* Bottom */
+.footer-bottom{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #333;
+    font-size: 13px;
+}
+
+.social-icons{
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.social-icons a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-bottom:10px ;
+    transition: 0.3s;
+}
+
+/* Hover Effects */
+.social-icons a:hover{
+    transform: scale(1.1);
+}
+
+.location-iocon:hover{
+
+ transform: scale(1.1);
+}
+
+.tagline-2{
+    font-weight: 600;
+}
+
+.desc-box{
+     font-weight: 400;
+     font-size: 16px;
+}
+   

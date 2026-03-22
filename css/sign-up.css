@@ -1,62 +1,100 @@
 body{
     margin: 0;
-    font-family: Arial;
-    background: white;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
+.form-group{
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    font-size: 12px;
+    color: #555;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
 /* Container */
 .signup-container{
-    background: rgb(246, 239, 239);
-    padding: 70px;
-    width: 500px;
-    border-radius: 12px;
+    background: #fff;
+    padding: 40px;
+    width: 420px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
+
 
 /* Heading */
 .signup-container h2{
-    margin-bottom: 20px;
+    margin: 10px 0 5px;
+    font-weight: 600;
 }
 
-/* Inputs */
-.signup-container input{
-    width: 100%;
+.sub-text{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+/* Input Box */
+.input-box{
+    display: flex;
+    align-items: center;
+    background: #efe8e8;
     padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.input-box i{
+    margin-right: 10px;
+    color: #a0a0a0;
+}
+
+.input-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
 }
 
 /* Button */
 .signup-container button{
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background: rgb(113, 18, 18);
+    width: 60%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #8b0000;
     color: white;
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    font-weight: 500;
     transition: 0.3s;
 }
 
 .signup-container button:hover{
-    background:  #4c531c;
+    background: #6d0000;
 }
 
 /* Login link */
 .login-link{
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 14px;
 }
 
 .login-link a{
-    color: rgb(113, 18, 18);
+    color: #8b0000;
     text-decoration: none;
 }
 

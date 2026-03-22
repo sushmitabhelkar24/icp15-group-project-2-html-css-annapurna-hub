@@ -4,32 +4,55 @@
   <meta charset="UTF-8">
   <title>Sign Up</title>
   <link rel="stylesheet" href="../css/sign-up.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
   <div class="signup-container">
 
+    <div class="icon-box">
+      <img src="../images/acc-icon-sign-up.png" height="100">
+    </div>
+
     <h2>Create Account</h2>
+    <p class="sub-text">Join us today — it's completely free</p>
 
     <form>
 
-      <input type="text" placeholder="Full Name" required>
+  <div class="form-group">
+    <label>FULL NAME</label>
+    <div class="input-box">
+      <input type="text" required>
+    </div>
+  </div>
 
-      <input type="email" placeholder="Email Address" required>
+  <div class="form-group">
+    <label>EMAIL ADDRESS</label>
+    <div class="input-box">
+      <input type="email" required>
+    </div>
+  </div>
 
-      <input type="password" placeholder="Password" required>
+  <div class="form-group">
+    <label>PASSWORD</label>
+    <div class="input-box">
+      <input type="password" required>
+    </div>
+  </div>
 
-      <input type="password" placeholder="Confirm Password" required>
+  <div class="form-group">
+    <label>CONFIRM PASSWORD</label>
+    <div class="input-box">
+      <input type="password" required>
+    </div>
+  </div>
 
-      <button type="submit">Sign Up</button>
+  <button type="submit">Create My Account →</button>
 
-      <p class="login-link">
-        Already have an account? <a href="./login.html">Login</a>
-      </p>
-
-    </form>
-
+</form>
   </div>
 
 </body>
