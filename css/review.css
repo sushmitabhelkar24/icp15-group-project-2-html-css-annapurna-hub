@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    font-family: Arial;
+    font-family: "Titillium Web", sans-serif; 
     margin: 0;
     padding: 20px;
     background-color: rgb(244, 230, 230);
@@ -16,7 +16,7 @@ header {
     height: 200px;
 }
 .header h1 {
-    font-family: 'Playfair Display', serif;
+   font-family: "Titillium Web", sans-serif; 
     font-size: 42px;
     color: white;
     font-weight: 500;
@@ -31,7 +31,7 @@ header {
     margin: 0;
 }
 
-/* Reviews Section - 4 per row grid */
+/* Reviews Section  */
 .reviews {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -39,9 +39,10 @@ header {
     padding: 20px 24px;
     max-width: 860px;
     margin: 0 auto;
+   
 }
 
-/* Review Cards - लहान size */
+/* Review Cards */
 .review-card {
     background: #fff;
     overflow: hidden;
@@ -97,23 +98,17 @@ header {
     border: 1.5px solid #f0d0c0;
 }
 
-/* Stars */
-.stars {
-    color: gold;
-    font-size: 11px;
-}
-
 /* Hover */
 .review-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
 }
 
-/* Add Review Section */
 .add-review {
     background: #fff3e0;
     padding: 30px;
     text-align: center;
+    
 }
 
 .review-container {

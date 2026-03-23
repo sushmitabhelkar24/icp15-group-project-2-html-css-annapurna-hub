@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product page</title>
   <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
+
   <div class="main-container" id="mainNav">
     <input type="checkbox" id="nav-toggle">
     <img src="../images/main-logo-icon.png" class="main-logo-icon" alt="HomeMade Hub" />
@@ -29,27 +31,63 @@
       <!-- Search -->
       <div class="search-wrapper">
         <div class="search-icon">
-          <img src="../images/search-icon.svg" height="32px" style="margin-top:4px;" alt="Search" />
-        </div>
-        <div class="search-dropdown">
-          <input type="text" placeholder="Search products..." class="search-input" />
-          <div class="search-options">
-            <a href="../pages/pickles.html">Pickles</a>
-            <a href="../pages/product.html">Chutneys</a>
-            <a href="../pages/product.html">Papad</a>
-            <a href="../pages/product.html">Snacks</a>
-            <a href="../pages/product.html">Juice Powders</a>
-            <a href="../pages/product.html">Khakhra</a>
-            <a href="../pages/product.html">Masala</a>
-            <a href="../pages/product.html">Ready Mix</a>
-            <a href="../pages/product.html">Ghee</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
+   <!-- ══════════════ NAVBAR ══════════════ -->
+    <input type="checkbox" id="nav-toggle" hidden>
+    <div class="main-container" id="mainNav">
+        <img src="../images/main-logo-icon.png" class="main-logo-icon" alt="HomeMade Hub" />
+        <label for="nav-toggle" class="hamburger">
+            <span></span><span></span><span></span>
+        </label>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="../index.html"            class="menu active">Home</a>
+            <a href="../pages/product.html"    class="menu">Products</a>
+            <a href="../pages/about.html"      class="menu">About</a>
+            <a href="../pages/contact.html"    class="menu">Contact</a>
+            <a href="../pages/review.html"     class="menu">Review</a>
+            <a href="../pages/bestcellar.html" class="menu">Bestsellers</a>
+
+        </div>
+
+        <div class="nav-icons">
+            <div class="nav-menu">
+                <a href="../pages/login.html" class="menu">Login</a>
+                <a href="../pages/sign-up.html" class="menu">Sign up</a>
+            </div>
+
+            <!-- Search -->
+            <div class="search-wrapper">
+                <div class="search-icon">
+                    <img src="../images/search-icon.svg" height="32px" style="margin-top:4px;" alt="Search" />
+                </div>
+                <div class="search-dropdown">
+                    <input type="text" placeholder="Search products..." class="search-input" />
+                    <div class="search-options">
+                        <a href="./pages/product.html">Pickles</a>
+                        <a href="./pages/product.html">Chutneys</a>
+                        <a href="../pages/product.html">Papad</a>
+                        <a href="../pages/product.html">Snacks</a>
+                        <a href="../pages/product.html">Juice Powders</a>
+                        <a href="../pages/product.html">Khakhra</a>
+                        <a href="../pages/product.html">Masala</a>
+                        <a href="../pages/product.html">Ready Mix</a>
+                        <a href="../pages/product.html">Ghee</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <div class="title-section">
   <h1 class="title">Our Products</h1>
+  <p class="title-desc">
+    Discover our range of authentic homemade products crafted with love, 
+    quality ingredients, and traditional recipes.
+  </p>
+</div>
+
   <div class="scroll-nav">
     <a href="../pages/product.html">All</a>
     <a href="../pages/chutneys.html">Chutneys</a>
