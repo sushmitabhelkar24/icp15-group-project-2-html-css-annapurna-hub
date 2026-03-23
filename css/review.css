@@ -178,23 +178,6 @@ button:hover {
     background-color: #4c531c;
 }
 
-.back-btn {
-    background-color: rgb(113, 18, 18);
-    color: white;
-    width: 130px;
-    padding: 10px;
-    margin: 10px 20px 20px;
-    border: none;
-    border-radius: 25px;
-    font-size: 15px;
-    cursor: pointer;
-    display: block;
-}
-
-.back-btn:hover {
-    background-color: #4c531c;
-}
-
 /* Footer */
 .footer {
     background: rgba(30, 5, 5, 0.97);
