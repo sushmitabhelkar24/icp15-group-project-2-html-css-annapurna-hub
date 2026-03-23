@@ -14,27 +14,50 @@
   <body>
     <div class="body-bg">
     <div>
-      <!-- navbar -->
+    <!-- ══════════════ NAVBAR ══════════════ -->
+    <input type="checkbox" id="nav-toggle" hidden>
+    <div class="main-container" id="mainNav">
+      <img src="./../images/main-logo-icon.png" class="main-logo-icon" alt="HomeMade Hub" />
+      <label for="nav-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
 
-      <div class="main-containe">
-    <div class="navbar-main-container">
-        <div class="logo-container">
-            <img src="./../images/main-logo-icon.png" alt="logo" height="80px" class="main-logo">
-            <b class="project-name">Annapurna Hub</b>
+      <div class="nav-menu" id="navMenu">
+        <a href="./../index.html"            class="menu active">Home</a>
+        <a href="./product.html"    class="menu">Products</a>
+        <a href="./about.html"      class="menu">About</a>
+        <a href="./contact.html"    class="menu">Contact</a>
+        <a href="./review.html"     class="menu">Review</a>
+        <a href="./bestcellar.html" class="menu">Bestsellers</a>
+      </div>
+
+      <div class="nav-icons">
+        <div class="nav-menu">
+          <a href="./login.html" class="menu">Login</a>
+          <a href="./sign-up.html" class="menu">Sign up</a>
         </div>
 
-        <div class="nav-links-container">
-            <a href="./../index.html" class="nav-text-container"> Home</a>
-            <a href="./../pages/product.html" class="nav-text-container">Products</a>
-            <a href="./../pages/about.html" class="nav-text-container">About</a>
-            <a href="./../pages/contact.html" class="nav-text-container">Contact</a>
-            <a href="./../pages/reviews.html" class="nav-text-container">Reviews</a>
+        <!-- Search -->
+        <div class="search-wrapper">
+          <div class="search-icon">
+            <img src="./../images/search-icon.svg" height="32px" style="margin-top:4px;" alt="Search" />
+          </div>
+          <div class="search-dropdown">
+            <input type="text" placeholder="Search products..." class="search-input" />
+            <div class="search-options">
+              <a href="./product.html">Pickles</a>
+              <a href="./product.html">Chutneys</a>
+              <a href="./product.html">Papad</a>
+              <a href="./product.html">Snacks</a>
+              <a href="./product.html">Juice Powders</a>
+              <a href="./product.html">Khakhra</a>
+              <a href="./product.html">Masala</a>
+              <a href="./product.html">Ready Mix</a>
+              <a href="./product.html">Ghee</a>
+            </div>
+          </div>
         </div>
-
-        <div class="auth-links-containar">
-            <a href="./../pages/login.html" class="nav-text-container">Login</a>
-            <a href="./../pages/signup.html" class="nav-text-container">Sign Up</a>
-        </div>
+      </div>
     </div>
   <!-- Hero section -->
       <div class="bg-img-head-section">
@@ -45,7 +68,10 @@
           pricing, or anything else, our team is ready to answer all your
           questions.
         </p>
-        <div class="btn-link-hero">
+      </div> 
+      </div>  
+
+      <div class="btn-link-hero-img">
         <div class="facility-section">
           <a href="#place-order-unique" class="btn-head-three">
           <div class="facility-section-item">
@@ -77,19 +103,16 @@
           </a>
         </div>
         </div>
-      </div> 
-      </div>  
-     
-      <br/>
+     <br/>
       <br/>
    <!-- Place order -->
-       <div class="bg-place-order">
+       <div >
        <div id="place-order-unique" class="main-card-container-order">
         <div>
         <span class="message-heading">Place Order</span>
             <div class="order-sub-container">
-            <div>
-        <form>
+            
+               <form>
          <label for="name" class="label-order">Full Name *</label><br />
             <input
               type="text"
@@ -126,11 +149,7 @@
               id="product-date"
               placeholder="Enter booking date"
               class="enter-order" required/><br/>
-              <div class="enter-gender">
-              <label for="gender" class="label-order">Gender</label><br/>
-              <input type="radio" name="gender" id="gender" />Male
-              <input type="radio" name="gender" id="gender" />Female
-              <input type="radio" name="gender" id="gender" />Other</div>
+             
 
                <div class="product-item-form-container">
               <span class="product-item-form-head-name">Select Products</span>
@@ -224,7 +243,6 @@
       </div>
     </details>
   </div>
-
 </div>
                      
       <div class="category">
@@ -276,17 +294,17 @@
 
       </div>
                       
-                    <div class="category">
+     <div class="category">
 
-  <div>
+     <div>
     <label class="product-item-form-head-name">
       <input type="checkbox">
       Snacks Items
     </label>&nbsp;&nbsp;
-  </div>
+      </div>
 
-  <div>
-    <details class="dropdown">
+     <div>
+     <details class="dropdown">
       <summary>Select Items</summary>
 
       <div class="items-sequence">
@@ -317,21 +335,20 @@
         </label>
 
       </div>
-    </details>
-  </div>
+     </details>
+    </div>
 
-                    </div>
+    </div>
+    <div class="category">
 
-                     <div class="category">
-
-  <div>
+     <div>
     <label class="product-item-form-head-name">
       <input type="checkbox">
       Khakra
     </label>&nbsp;&nbsp;
-  </div>
+     </div>
 
-  <div>
+     <div>
     <details class="dropdown">
       <summary>Select Items</summary>
 
@@ -359,20 +376,20 @@
 
       </div>
     </details>
-  </div>
+     </div>
 
-</div>
+    </div>
                        
-                    <div class="category">
+    <div class="category">
 
-  <div>
+    <div>
     <label class="product-item-form-head-name">
       <input type="checkbox">
       Masala
     </label>&nbsp;&nbsp;
-  </div>
+    </div>
 
-  <div>
+     <div>
     <details class="dropdown">
       <summary>Select Items</summary>
 
@@ -405,11 +422,11 @@
 
       </div>
     </details>
+     </div>
+
   </div>
 
-</div>
-
-                    <div class="category">
+  <div class="category">
 
   <div>
     <label class="product-item-form-head-name">
@@ -530,14 +547,10 @@
             ></textarea
             ><br />
             <input type="checkbox"  required checked/><span class="label-order">I accept all terms and conditions.</span><br/>
-            </div>
+            
 
          <button class="order-formbtn"><img src="./../images/contact-page-img/right-arrow-cn.svg" alt="right-arrow" height="20px"/> Order Now </button>
-        </form>
-
-
-
-
+               </form>
             </div>
         </div>    
             
@@ -599,26 +612,31 @@
        <div>
         <span class="sub-location-section-content">Sub Branches : Find your most native places</span>
         <div class="sub-location-card-container">
+
         <div class="sub-location-section-city-content">
           <img src="./../images/contact-page-img/nagpur.jpg" alt="nagpur-img" height="150px"  width="230px"/>
-          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/> Sadar,Nagpur,Maharashtra</span>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/><a href="https://www.google.com/maps/place/Sadar,+Nagpur,+Maharashtra/@21.1640837,79.0627833,15z/data=!3m1!4b1!4m6!3m5!1s0x3bd4c0fcf85ee143:0x8a9261908197e622!8m2!3d21.1629554!4d79.0734564!16s%2Fg%2F1jky0rzmj?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" target="_main" style="text-decoration: none;color: black;">Sadar,Nagpur,Maharashtra</a></span>
           <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-icon.svg" alt="contact-icon" height="15px"/><a href="tel:+91 8345678920" class="number-contact">+91 8345678920</a> </span>
         </div>
+
         <div class="sub-location-section-city-content">
           <img src="./../images/contact-page-img/akola.webp" alt="akola-img" height="150px"  width="230px"/>
-          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/> Kachari Chowk,Akola,Maharashtra</span>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/><a href="https://www.google.com/maps/search/Kachari+Chowk,Akola,Maharashtra/@20.7110024,76.9975678,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" target="_main" style="text-decoration: none;color: black;"> Kachari Chowk,Akola,Maharashtra</a></span>
           <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-icon.svg" alt="contact-icon" height="15px"/> <a href="tel:+91 8345675436" class="number-contact">+91 8345675436</a> </span>
         </div>
+
         <div class="sub-location-section-city-content">
           <img src="./../images/contact-page-img/mumbai.jpg" alt="mumbai-img" height="150px"  width="230px"/>
-          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/> Bandra,Mumbai,Maharashtra</span>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/><a href="https://www.google.com/maps/place/Bandra+West,+Mumbai,+Maharashtra/@19.0544779,72.8090547,14z/data=!3m1!4b1!4m6!3m5!1s0x3be7c8e123f8d27b:0x437996b49a236a78!8m2!3d19.0595596!4d72.8295287!16zL20vMDI4bGdt?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" target="_main" style="text-decoration: none;color: black;"> Bandra,Mumbai,Maharashtra</a></span>
           <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-icon.svg" alt="contact-icon" height="15px"/><a href="tel:+91 8345678769" class="number-contact">+91 8345678769</a> </span>
         </div>
+
         <div class="sub-location-section-city-content">
           <img src="./../images/contact-page-img/hingoli.jpg" alt="hingoli-img" height="150px"  width="230px"/>
-          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/> Velapur,Hingoli,Maharashtra</span>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/><a href="https://www.google.com/maps/place/Indira+Nagar,+Nashik,+Maharashtra+422009/@19.9741974,73.761938,15z/data=!3m1!4b1!4m6!3m5!1s0x3bddeb3d1e43e14b:0xc1e9dc2e1ad95d1a!8m2!3d19.9723313!4d73.7817225!16s%2Fg%2F1thgfh0b?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" target="_main" style="text-decoration: none;color: black;"> Indira Nagar,Nashik,Maharashtra</a></span>
           <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-icon.svg" alt="contact-icon" height="15px"/><a href="tel:+91 8345672340" class="number-contact">+91 8345672340</a> </span>
         </div>
+
         </div>
       </div>
       <br/>
@@ -695,7 +713,9 @@
       </div>
     </div>
 
-     <footer class="footer">
+    <!-- Footer -->
+     <!-- ══════════════ FOOTER ══════════════ -->
+    <footer class="footer">
       <div class="footer-container">
 
         <!-- About -->
@@ -746,9 +766,9 @@
         <!-- Contact -->
         <div class="footer-section">
           <h3>Contact</h3>
-         <a href="/cdn-cgi/l/email-protection#75061d071403141b1c061d10071e1407351218141c195b161a18" class="contact-link">
-             <img src="./../images/gmail-icon.png" height="20px"> <span class="__cf_email__" data-cfemail="d3a0bba1b2a5b2bdbaa0bbb6a1b8b2a193b4beb2babffdb0bcbe">[email&#160;protected]</span>
-         </a>
+         <a href="mailto:shravanisherkar@gmail.com" class="contact-link" ><img src="./../images/gmail-icon.png" height="20px">
+  shravanisherkar@gmail.com
+</a>
           <a href="tel:+919309326631" class="contact-link">
             <img src="./../images/call-icon.png" height="15px" style="margin-top: 10px;"> +91 9309326631
           </a>
@@ -769,8 +789,7 @@
           </div>
         </div>
       </div>
-
-     </footer>
+     
      </div>
     </div>
      </body>
