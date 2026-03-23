@@ -2,7 +2,7 @@
 🏠 Annapurna Hub
 
 Live Website: https://your-website-link.com
-              https://icp15-group-project-2-html-css-anna.vercel.app/
+Live Website: https://icp15-group-project-2-html-css-anna.vercel.app/
 
 ---
 
@@ -54,7 +54,7 @@ project/
 <img src="./images/readme-img/product.png" width="600"/>
 
 <h3>📋 Contact Page</h3>
-<img src="images/contact.png" width="600"/>
+<img src="./images/readme-img/contactct.png" width="600"/>
 ---
 
 ##  How to Run
