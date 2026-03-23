@@ -1,328 +1,390 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/bestcellar.css">
-</head>
-<body>
-      <div class="main-container" id="mainNav">
-        <img src="../images/main-logo-icon.png" class="main-logo-icon" alt="HomeMade Hub" />
-        <label for="nav-toggle" class="hamburger">
-          <span></span><span></span><span></span>
-        </label>
-        <div class="nav-menu" id="navMenu">
-          <a href="../index.html" class="menu ">Home</a>
-          <a href="../pages/product.html" class="menu">Products</a>
-          <a href="../pages/about.html" class="menu">About</a>
-          <a href="../pages/contact.html" class="menu">Contact</a>
-          <a href="../pages/review.html" class="menu">Review</a>
-          <a href="../pages/bestcellar.html" class="menu">Bestsellers</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bestcellar.css" />
+  </head>
+  <body>
+    <div class="main-container" id="mainNav">
+      <img
+        src="../images/main-logo-icon.png"
+        class="main-logo-icon"
+        alt="HomeMade Hub"
+      />
+      <label for="nav-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <div class="nav-menu" id="navMenu">
+        <a href="../index.html" class="menu">Home</a>
+        <a href="../pages/product.html" class="menu">Products</a>
+        <a href="../pages/about.html" class="menu">About</a>
+        <a href="../pages/contact.html" class="menu">Contact</a>
+        <a href="../pages/review.html" class="menu">Review</a>
+        <a href="../pages/bestcellar.html" class="menu">Bestsellers</a>
+      </div>
+      <div class="nav-icons">
+        <div class="nav-menu">
+          <a href="../pages/login.html" class="menu">Login</a>
+          <a href="../pages/sign-up.html" class="menu">Sign up</a>
         </div>
-        <div class="nav-icons">
-          <div class="nav-menu">
-            <a href="../pages/login.html" class="menu">Login</a>
-            <a href="../pages/sign-up.html" class="menu">Sign up</a>
+        <!-- Search -->
+        <div class="search-wrapper">
+          <div class="search-icon">
+            <img
+              src="../images/search-icon.svg"
+              height="32px"
+              style="margin-top: 4px"
+              alt="Search"
+            />
           </div>
-          <!-- Search -->
-          <div class="search-wrapper">
-            <div class="search-icon">
-              <img src="../images/search-icon.svg" height="32px" style="margin-top:4px;" alt="Search" />
-            </div>
-            <div class="search-dropdown">
-              <input type="text" placeholder="Search products..." class="search-input" />
-              <div class="search-options">
-                <a href="../pages/pickles.html">Pickles</a>
-                <a href="../pages/product.html">Chutneys</a>
-                <a href="../pages/product.html">Papad</a>
-                <a href="../pages/product.html">Snacks</a>
-                <a href="../pages/product.html">Juice Powders</a>
-                <a href="../pages/product.html">Khakhra</a>
-                <a href="../pages/product.html">Masala</a>
-                <a href="../pages/product.html">Ready Mix</a>
-                <a href="../pages/product.html">Ghee</a>
-              </div>
+          <div class="search-dropdown">
+            <input
+              type="text"
+              placeholder="Search products..."
+              class="search-input"
+            />
+            <div class="search-options">
+              <a href="../pages/pickles.html">Pickles</a>
+              <a href="../pages/product.html">Chutneys</a>
+              <a href="../pages/product.html">Papad</a>
+              <a href="../pages/product.html">Snacks</a>
+              <a href="../pages/product.html">Juice Powders</a>
+              <a href="../pages/product.html">Khakhra</a>
+              <a href="../pages/product.html">Masala</a>
+              <a href="../pages/product.html">Ready Mix</a>
+              <a href="../pages/product.html">Ghee</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- HERO BANNER -->
-      <div class="bestsellers-hero">
-        <div class="hero-badge"><img src="../images/star.png" width="12px"> Customer Favourites</div>
-        <h1>Our <span>Bestsellers</span></h1>
-        <p>Handpicked by thousands of happy customers — the most loved homemade flavours.</p>
+    </div>
+    <!-- HERO BANNER -->
+    <div class="bestsellers-hero">
+      <div class="hero-badge">
+        <img src="../images/star.png" width="12px" /> Customer Favourites
       </div>
+      <h1>Our <span>Bestsellers</span></h1>
+      <p>
+        Handpicked by thousands of happy customers — the most loved homemade
+        flavours.
+      </p>
+    </div>
 
-      <!-- DIVIDER -->
-      <div class="section-label">
-        <span>Top Selling Products</span>
-      </div>
+    <!-- DIVIDER -->
+    <div class="section-label">
+      <span>Top Selling Products</span>
+    </div>
 
-      <!-- PRODUCTS GRID -->
-      <div class="bestsellers-grid" id="productsGrid">
-
-        <div class="bs-card" data-category="pickle">
-          <div class="rank-badge bronze">Bestseller</div>
-          <span class="hot-label"><img src="../images/fire.png" width="15px">Hot</span>
-          <div class="card-img-wrap">
-            <img src="../images/mango-p-img.jpg" alt="Mango Pickle" />
-          </div>
-          <div class="card-body">
-            <h3>Mango Pickle</h3>
-            <p>Traditional aam ka achar, sun-dried & slow-marinated</p>
-            <div class="stars">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-                class="star">★</span><span class="star">★</span>
-              <span class="rating-count">(1.2k reviews)</span>
-            </div>
-            <div class="card-footer">
-              <div class="price-wrap">
-                <span class="price">₹199</span>
-                <span class="price-old">₹249</span>
-              </div>
-              <a href="../pages/contact.html"><button>Add to Cart</button></a>
-            </div>
-          </div>
+    <!-- PRODUCTS GRID -->
+    <div class="bestsellers-grid" id="productsGrid">
+      <div class="bs-card" data-category="pickle">
+        <div class="rank-badge bronze">Bestseller</div>
+        <span class="hot-label"
+          ><img src="../images/fire.png" width="15px" />Hot</span
+        >
+        <div class="card-img-wrap">
+          <img src="../images/mango-p-img.jpg" alt="Mango Pickle" />
         </div>
-        <div class="bs-card" data-category="chutney">
-          <div class="rank-badge bronze">Bestseller</div>
-          <div class="card-img-wrap">
-            <img src="../images/garlic-chatneys-img.jpg" alt="Garlic Chutney" />
+        <div class="card-body">
+          <h3>Mango Pickle</h3>
+          <p>Traditional aam ka achar, sun-dried & slow-marinated</p>
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span>
+            <span class="rating-count">(1.2k reviews)</span>
           </div>
-          <div class="card-body">
-            <h3>Garlic Chutney</h3>
-            <p>Fiery red garlic chutney, perfect with roti & bhakri</p>
-            <div class="stars">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-                class="star">★</span><span class="star" style="color:#ddd">★</span>
-              <span class="rating-count">(890 reviews)</span>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <span class="price">₹199</span>
+              <span class="price-old">₹249</span>
             </div>
-            <div class="card-footer">
-              <div class="price-wrap">
-                <span class="price">₹149</span>
-                <span class="price-old">₹180</span>
-              </div>
-              <a href="../pages/contact.html"><button>Add to Cart</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bs-card" data-category="ghee">
-          <div class="rank-badge bronze">Bestseller</div>
-          <span class="hot-label new-label"><img src="../images/fire.png" width="12px"> New</span>
-          <div class="card-img-wrap">
-            <img src="../images/ghee.webp" alt="Pure Desi Ghee" />
-          </div>
-          <div class="card-body">
-            <h3>Pure Desi Ghee</h3>
-            <p>Bilona method cow ghee, rich aroma & golden texture</p>
-            <div class="stars">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-                class="star">★</span><span class="star">★</span>
-              <span class="rating-count">(760 reviews)</span>
-            </div>
-            <div class="card-footer">
-              <div class="price-wrap">
-                <span class="price">₹499</span>
-                <span class="price-old">₹599</span>
-              </div>
-              <a href="../pages/contact.html"><button>Add to Cart</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bs-card" data-category="masala">
-          <div class="rank-badge bronze">Bestseller</div>
-          <div class="card-img-wrap">
-            <img src="../images/garam-masala.jpg" alt="Garam Masala" />
-          </div>
-          <div class="card-body">
-            <h3>Garam Masala</h3>
-            <p>Stone-ground whole spice blend, slow roasted</p>
-            <div class="stars">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-                class="star">★</span><span class="star" style="color:#ddd">★</span>
-              <span class="rating-count">(620 reviews)</span>
-            </div>
-            <div class="card-footer">
-              <div class="price-wrap">
-                <span class="price">₹129</span>
-                <span class="price-old">₹160</span>
-              </div>
-              <a href="../pages/contact.html"><button>Add to Cart</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bs-card" data-category="snacks">
-          <div class="rank-badge bronze">Bestseller</div>
-          <span class="hot-label"><img src="../images/fire.png" width="15px"> Hot</span>
-          <div class="card-img-wrap">
-            <img src="../images/chivda-img.jpg" alt="Chivda Mix" />
-          </div>
-          <div class="card-body">
-            <h3>Chivda Mix</h3>
-            <p>Crispy poha chivda with peanuts & cashews</p>
-            <div class="stars">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-                class="star">★</span><span class="star">★</span>
-              <span class="rating-count">(540 reviews)</span>
-            </div>
-            <div class="card-footer">
-              <div class="price-wrap">
-                <span class="price">₹119</span>
-                <span class="price-old">₹149</span>
-              </div>
-              <a href="../pages/contact.html"><button>Add to Cart</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bs-card" data-category="pickle">
-          <div class="rank-badge bronze">Bestseller</div>
-          <div class="card-img-wrap">
-            <img src="../images/lemon-p-img.jpg" alt="Lemon Pickle" />
-          </div>
-          <div class="card-body">
-            <h3>Lemon Pickle</h3>
-            <p>Tangy & spicy nimbu achar, aged to perfection</p>
-            <div class="stars">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-                class="star">★</span><span class="star" style="color:#ddd">★</span>
-              <span class="rating-count">(430 reviews)</span>
-            </div>
-            <div class="card-footer">
-              <div class="price-wrap">
-                <span class="price">₹169</span>
-                <span class="price-old">₹199</span>
-              </div>
-              <a href="../pages/contact.html"><button>Add to Cart</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bs-card" data-category="snacks">
-          <div class="rank-badge bronze">Bestseller</div>
-          <div class="card-img-wrap">
-            <img src="../images/methi-khakra.jpg" alt="Methi Khakhra" />
-          </div>
-          <div class="card-body">
-            <h3>Methi Khakhra</h3>
-            <p>Thin, crispy & healthy Gujarati snack with fenugreek</p>
-            <div class="stars">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-                class="star">★</span><span class="star">★</span>
-              <span class="rating-count">(380 reviews)</span>
-            </div>
-            <div class="card-footer">
-              <div class="price-wrap">
-                <span class="price">₹99</span>
-                <span class="price-old">₹129</span>
-              </div>
-              <a href="../pages/contact.html"><button>Add to Cart</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="bs-card" data-category="chutney">
-          <div class="rank-badge bronze">Bestseller</div>
-          <span class="hot-label new-label"><img src="../images/star.png" width="12px"> New</span>
-          <div class="card-img-wrap">
-            <img src="../images/red-chilli.webp" alt="Dry Coconut Chutney" />
-          </div>
-          <div class="card-body">
-            <h3>Dry Coconut Chutney</h3>
-            <p>Dry copra & peanut chutney, great with idli & dosa</p>
-            <div class="stars">
-              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-                class="star">★</span><span class="star" style="color:#ddd">★</span>
-              <span class="rating-count">(290 reviews)</span>
-            </div>
-            <div class="card-footer">
-              <div class="price-wrap">
-                <span class="price">₹139</span>
-                <span class="price-old">₹169</span>
-              </div>
-              <a href="../pages/contact.html"><button>Add to Cart</button></a>
-            </div>
+            <a href="../pages/contact.html"><button>Add to Cart</button></a>
           </div>
         </div>
       </div>
-      <!-- Footer section -->
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- About -->
-          <div class="about-section">
-            <div class="about-row">
-              <div class="logo-box">
-                <img src="../images/main-logo-icon.png" alt="HomeMade Hub Logo">
-              </div>
-              <div class="desc-box">
-                <p>
-                  We bring you the warmth of home in every bite. Crafted with love and care,
-                  our products capture the true essence of traditional flavors. From tangy, spicy pickles
-                  to wholesome healthy snacks — prepared using time-honored recipes and the finest ingredients.
-                </p>
-              </div>
+      <div class="bs-card" data-category="chutney">
+        <div class="rank-badge bronze">Bestseller</div>
+        <div class="card-img-wrap">
+          <img src="../images/garlic-chatneys-img.jpg" alt="Garlic Chutney" />
+        </div>
+        <div class="card-body">
+          <h3>Garlic Chutney</h3>
+          <p>Fiery red garlic chutney, perfect with roti & bhakri</p>
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span><span class="star">★</span
+            ><span class="star" style="color: #ddd">★</span>
+            <span class="rating-count">(890 reviews)</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <span class="price">₹149</span>
+              <span class="price-old">₹180</span>
             </div>
-            <p class="tagline-2">Fresh &amp; homemade products delivered with love....</p>
+            <a href="../pages/contact.html"><button>Add to Cart</button></a>
           </div>
-          <!-- Quick Links -->
-          <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../pages/product.html">Products</a></li>
-              <li><a href="../pages/about.html">About</a></li>
-              <li><a href="../pages/contact.html">Contact</a></li>
-              <li><a href="../pages/review.html">Review</a></li>
-              <li><a href="../pages/bestcellar.html">Bestsellers</a></li>
-            </ul>
+        </div>
+      </div>
+
+      <div class="bs-card" data-category="ghee">
+        <div class="rank-badge bronze">Bestseller</div>
+        <span class="hot-label new-label"
+          ><img src="../images/fire.png" width="12px" /> New</span
+        >
+        <div class="card-img-wrap">
+          <img src="../images/ghee.webp" alt="Pure Desi Ghee" />
+        </div>
+        <div class="card-body">
+          <h3>Pure Desi Ghee</h3>
+          <p>Bilona method cow ghee, rich aroma & golden texture</p>
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span>
+            <span class="rating-count">(760 reviews)</span>
           </div>
-          <!-- Categories -->
-          <div class="footer-section">
-            <h3>Categories</h3>
-            <ul>
-              <li><a href="../pages/pickles.html">Pickles</a></li>
-              <li><a href="../pages/chutneys.html">Chutneys</a></li>
-              <li><a href="../pages/snack.html">Snacks</a></li>
-              <li><a href="../pages/masala.html">Masala</a></li>
-              <li><a href="../pages/khakra.html">Khakra</a></li>
-              <li><a href="../pages/ghee.html">Ghee</a></li>
-              <li><a href="../pages/papad.html">Papad</a></li>
-              <li><a href="../pages/ready-mix.html">Ready-Mix</a></li>
-            </ul>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <span class="price">₹499</span>
+              <span class="price-old">₹599</span>
+            </div>
+            <a href="../pages/contact.html"><button>Add to Cart</button></a>
           </div>
-          <!-- Contact -->
-          <div class="footer-section">
-            <h3>Contact</h3>
-            <a href="mailto:shravanisherkar@gmail.com" class="contact-link">
-              <img src="../images/gmail-icon.png" height="20px"> shravanisherkar@gmail.com
+        </div>
+      </div>
+
+      <div class="bs-card" data-category="masala">
+        <div class="rank-badge bronze">Bestseller</div>
+        <div class="card-img-wrap">
+          <img src="../images/garam-masala.jpg" alt="Garam Masala" />
+        </div>
+        <div class="card-body">
+          <h3>Garam Masala</h3>
+          <p>Stone-ground whole spice blend, slow roasted</p>
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span><span class="star">★</span
+            ><span class="star" style="color: #ddd">★</span>
+            <span class="rating-count">(620 reviews)</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <span class="price">₹129</span>
+              <span class="price-old">₹160</span>
+            </div>
+            <a href="../pages/contact.html"><button>Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bs-card" data-category="snacks">
+        <div class="rank-badge bronze">Bestseller</div>
+        <span class="hot-label"
+          ><img src="../images/fire.png" width="15px" /> Hot</span
+        >
+        <div class="card-img-wrap">
+          <img src="../images/chivda-img.jpg" alt="Chivda Mix" />
+        </div>
+        <div class="card-body">
+          <h3>Chivda Mix</h3>
+          <p>Crispy poha chivda with peanuts & cashews</p>
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span>
+            <span class="rating-count">(540 reviews)</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <span class="price">₹119</span>
+              <span class="price-old">₹149</span>
+            </div>
+            <a href="../pages/contact.html"><button>Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bs-card" data-category="pickle">
+        <div class="rank-badge bronze">Bestseller</div>
+        <div class="card-img-wrap">
+          <img src="../images/lemon-p-img.jpg" alt="Lemon Pickle" />
+        </div>
+        <div class="card-body">
+          <h3>Lemon Pickle</h3>
+          <p>Tangy & spicy nimbu achar, aged to perfection</p>
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span><span class="star">★</span
+            ><span class="star" style="color: #ddd">★</span>
+            <span class="rating-count">(430 reviews)</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <span class="price">₹169</span>
+              <span class="price-old">₹199</span>
+            </div>
+            <a href="../pages/contact.html"><button>Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bs-card" data-category="snacks">
+        <div class="rank-badge bronze">Bestseller</div>
+        <div class="card-img-wrap">
+          <img src="../images/methi-khakra.jpg" alt="Methi Khakhra" />
+        </div>
+        <div class="card-body">
+          <h3>Methi Khakhra</h3>
+          <p>Thin, crispy & healthy Gujarati snack with fenugreek</p>
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span>
+            <span class="rating-count">(380 reviews)</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <span class="price">₹99</span>
+              <span class="price-old">₹129</span>
+            </div>
+            <a href="../pages/contact.html"><button>Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bs-card" data-category="chutney">
+        <div class="rank-badge bronze">Bestseller</div>
+        <span class="hot-label new-label"
+          ><img src="../images/star.png" width="12px" /> New</span
+        >
+        <div class="card-img-wrap">
+          <img src="../images/red-chilli.webp" alt="Dry Coconut Chutney" />
+        </div>
+        <div class="card-body">
+          <h3>Dry Coconut Chutney</h3>
+          <p>Dry copra & peanut chutney, great with idli & dosa</p>
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span
+            ><span class="star">★</span><span class="star">★</span
+            ><span class="star" style="color: #ddd">★</span>
+            <span class="rating-count">(290 reviews)</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-wrap">
+              <span class="price">₹139</span>
+              <span class="price-old">₹169</span>
+            </div>
+            <a href="../pages/contact.html"><button>Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="about-section">
+          <div class="about-row">
+            <div class="logo-box">
+              <img src="../images/main-logo-icon.png" alt="HomeMade Hub Logo" />
+            </div>
+            <div class="desc-box">
+              <p>
+                We bring you the warmth of home in every bite. Crafted with love
+                and care, our products capture the true essence of traditional
+                flavors. From tangy, spicy pickles to wholesome healthy snacks —
+                prepared using time-honored recipes and the finest ingredients.
+              </p>
+            </div>
+          </div>
+          <p class="tagline-2">
+            Fresh &amp; homemade products delivered with love....
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/product.html">Products</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="../pages/review.html">Review</a></li>
+            <li><a href="../pages/bestcellar.html">Bestsellers</a></li>
+          </ul>
+        </div>
+        <!-- Categories -->
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="../pages/pickles.html">Pickles</a></li>
+            <li><a href="../pages/chutneys.html">Chutneys</a></li>
+            <li><a href="../pages/snack.html">Snacks</a></li>
+            <li><a href="../pages/masala.html">Masala</a></li>
+            <li><a href="../pages/khakra.html">Khakra</a></li>
+            <li><a href="../pages/ghee.html">Ghee</a></li>
+            <li><a href="../pages/papad.html">Papad</a></li>
+            <li><a href="../pages/ready-mix.html">Ready-Mix</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <a href="mailto:shravanisherkar@gmail.com" class="contact-link">
+            <img src="../images/gmail-icon.png" height="20px" />
+            shravanisherkar@gmail.com
+          </a>
+          <a href="tel:+919309326631" class="contact-link">
+            <img
+              src="../images/call-icon.png"
+              height="15px"
+              style="margin-top: 10px"
+            />
+            +91 9309326631
+          </a>
+          <a
+            href="https://maps.app.goo.gl/vEb9WBWwacu7e1f16"
+            target="_blank"
+            class="contact-link"
+          >
+            <img src="../images/location-icon.svg" height="15px" />Ahilyanagar,
+            Maharashtra, India
+          </a>
+
+          <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                src="../images/instagram-icon.svg"
+                height="28px"
+                alt="Instagram"
+              />
             </a>
-            <a href="tel:+919309326631" class="contact-link">
-              <img src="../images/call-icon.png" height="15px" style="margin-top: 10px;"> +91 9309326631
+            <a href="https://www.facebook.com/" target="_blank">
+              <img
+                src="../images/facebook-icon.svg"
+                height="28px"
+                alt="Facebook"
+              />
             </a>
-            <a href="https://maps.app.goo.gl/vEb9WBWwacu7e1f16" target="_blank" class="contact-link">
-              <img src="../images/location-icon.svg" height="15px">Ahilyanagar, Maharashtra, India
+            <a href="https://web.whatsapp.com/" target="_blank">
+              <img
+                src="../images/whatsapp-icon.svg"
+                height="28px"
+                alt="WhatsApp"
+              />
             </a>
-
-            <div class="social-icons">
-              <a href="https://www.instagram.com/" target="_blank">
-                <img src="../images/instagram-icon.svg" height="28px" alt="Instagram">
-              </a>
-              <a href="https://www.facebook.com/" target="_blank">
-                <img src="../images/facebook-icon.svg" height="28px" alt="Facebook">
-              </a>
-              <a href="https://web.whatsapp.com/" target="_blank">
-                <img src="../images/whatsapp-icon.svg" height="28px" alt="WhatsApp">
-              </a>
-            </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>© 2026 HomeMade Hub | All Rights Reserved | Made with love in Maharashtra</p>
-        </div>
-      </footer>
-    </body>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2026 HomeMade Hub | All Rights Reserved | Made with love in
+          Maharashtra
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
