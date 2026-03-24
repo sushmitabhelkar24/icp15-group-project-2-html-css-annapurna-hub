@@ -56,7 +56,7 @@ project/
 <img src="./images/readme-img/product.png" width="600"/>
 
 <h3>📋 Contact Page</h3>
-<img src="./images/readme-img/contactct.png" width="600"/>
+<img src="./images/readme-img/contact.png" width="600"/>
 ---
 
 ##  How to Run
