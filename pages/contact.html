@@ -72,291 +72,621 @@
     <h1>Contact Us</h1>
     <p>We are here to hear you! Whether you have a question about services, pricing, or anything else, our team is ready to answer.</p>
     <div class="quick-nav">
-      <a href="#place-order">📦 Place Order</a>
-      <a href="#send-message">✉️ Send Message</a>
-      <a href="#our-location">📍 Our Location</a>
+      <a href="#place-order-unique">📦 Place Order</a>
+      <a href="#send-message-unique">✉️ Send Message</a>
+      <a href="#our-location-unique">📍 Our Location</a>
     </div>
   </div>
 </header>
 
-<!-- ══ PAGE BODY ══ -->
-<div class="page-body">
+<!-- Place order -->
+       <div >
+       <div id="place-order-unique" class="main-card-container-order">
+        <div>
+        <span class="message-heading">Place Order</span>
+            <div class="order-sub-container">
+            
+               <form>
+         <label for="name" class="label-order">Full Name *</label><br />
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="enter-order"
+              required
+            /><br />
+            <label for="email" class="label-order">Email Address *</label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="enter-order"
+              required
+            /><br />
+            <label for="phone" class="label-order">Phone Number *</label><br />
+            <input
+              type="text"
+              id="phone"
+              placeholder="Enter your phone number"
+              class="enter-order" required/><br/>
+              
+            <label for="customer-address" class="label-order">Shipping Address *</label><br />
+            <input
+              type="text"
+              id="customer-address"
+              placeholder="Enter your shipping address"
+              class="enter-order" required/><br/>
+               <label for="product-date" class="label-order">Ordered date</label><br />
+            <input
+              type="date"
+              id="product-date"
+              placeholder="Enter booking date"
+              class="enter-order" required/><br/>
+             
 
-  <!-- PLACE ORDER -->
-  <section id="place-order">
-    <h2 class="section-title">Place Order</h2>
-    <div class="card">
-      <form>
-        <div class="form-grid">
-          <div class="form-group">
-            <label>Full Name *</label>
-            <input type="text" placeholder="Enter your name" required />
-          </div>
-          <div class="form-group">
-            <label>Email Address *</label>
-            <input type="email" placeholder="Enter your email" required />
-          </div>
-          <div class="form-group">
-            <label>Phone Number *</label>
-            <input type="tel" placeholder="Enter phone number" required />
-          </div>
-          <div class="form-group">
-            <label>Order Date</label>
-            <input type="date" />
-          </div>
-          <div class="form-group full">
-            <label>Shipping Address *</label>
-            <input type="text" placeholder="Enter shipping address" required />
-          </div>
-        </div>
+               <div class="product-item-form-container">
+              <span class="product-item-form-head-name">Select Products</span>
+                  
+                    <div class="category">
 
-        <!-- Products -->
-        <p class="products-label">Select Products</p>
-        <div class="products-grid">
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Pickles
+    </label>&nbsp;&nbsp;
+  </div>
 
-          <details class="product-card">
-            <summary><img src="../images/contact-page-img/picles-img-2.png" class="product-icon" alt="">pickles</summary>
-            <div class="items">
-              <div class="item-row"><label><input type="checkbox"> Mango</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Lemon</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Amla</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Green Chilli</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Carrot</label><input type="number" placeholder="Qty" min="0"></div>
-            </div>
-          </details>
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
 
-          <details class="product-card">
-            <summary><img src="../images/contact-page-img/icons8-chutney-64.png" class="product-icon" alt="">  Chutneys</summary>
-            <div class="items">
-              <div class="item-row"><label><input type="checkbox"> Dry Coconut</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Garlic</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Kokum</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Til</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Javas</label><input type="number" placeholder="Qty" min="0"></div>
-            </div>
-          </details>
+      <div class="items-sequence">
 
-          <details class="product-card">
-            <summary><img src="../images/contact-page-img/gheee-img.png" class="product-icon" alt=""> Ghee</summary>
-            <div class="items">
-              <div class="item-row"><label><input type="checkbox"> Cow Ghee</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Buffalo Ghee</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Gir Ghee</label><input type="number" placeholder="Qty" min="0"></div>
-            </div>
-          </details>
+        <label>
+          <input type="checkbox"> Mango
+          <input type="number" placeholder="Qty">
+        </label>
 
-          <details class="product-card">
-            <summary><img src="../images/contact-page-img/masala-icon.png" class="product-icon" alt=""> Masala</summary>
-            <div class="items">
-              <div class="item-row"><label><input type="checkbox"> Goda</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Garam</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Kala</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Dhana Powder</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Red Chilli</label><input type="number" placeholder="Qty" min="0"></div>
-            </div>
-          </details>
+        <label>
+          <input type="checkbox"> Lemon
+          <input type="number" placeholder="Qty">
+        </label>
 
-          <details class="product-card">
-            <summary><img src="../images/contact-page-img/papad.png" height="30px" alt=""> Papad</summary>
-            <div class="items">
-              <div class="item-row"><label><input type="checkbox"> Urad Dal</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Moong Dal</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Rice</label><input type="number" placeholder="Qty" min="0"></div>
-            </div>
-          </details>
+        <label>
+          <input type="checkbox"> Amla
+          <input type="number" placeholder="Qty">
+        </label>
 
-          <details class="product-card">
-            <summary><img src="../images/contact-page-img/icons8-snacks-50.png" class="product-icon" alt="">Snacks</summary>
-            <div class="items">
-              <div class="item-row"><label><input type="checkbox"> Chivda</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Sev</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Namkin</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Chakli</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Bhakarvadi</label><input type="number" placeholder="Qty" min="0"></div>
-            </div>
-          </details>
+        <label>
+          <input type="checkbox"> Green Chilli
+          <input type="number" placeholder="Qty">
+        </label>
 
-          <details class="product-card">
-            <summary><img src="../images/contact-page-img/ready-mix-icon.png" class="product-icon" alt="">Ready Mix</summary>
-            <div class="items">
-              <div class="item-row"><label><input type="checkbox"> Guava</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Lemon</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Mango</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Pineapple</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Apple</label><input type="number" placeholder="Qty" min="0"></div>
-            </div>
-          </details>
+        <label>
+          <input type="checkbox"> Carrot
+          <input type="number" placeholder="Qty">
+        </label>
 
-          <details class="product-card">
-            <summary><img src="../images/contact-page-img/khakra-icon.png" class="product-icon" alt="">Khakra</summary>
-            <div class="items">
-              <div class="item-row"><label><input type="checkbox"> Jeera</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Multigram</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Methi</label><input type="number" placeholder="Qty" min="0"></div>
-              <div class="item-row"><label><input type="checkbox"> Plain</label><input type="number" placeholder="Qty" min="0"></div>
-            </div>
-          </details>
-
-        </div>
-
-        <!-- Order Meta -->
-        <div class="form-grid" style="margin-top:20px;">
-          <div class="form-group">
-            <label>Select Branch</label>
-            <select>
-              <option value="">-- Select --</option>
-              <option>Nashik</option><option>Nagpur</option>
-              <option>Mumbai</option><option>Hingoli</option><option>Akola</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Delivery Type *</label>
-            <select required>
-              <option value="">-- Select --</option>
-              <option>Standard Delivery (3–5 days)</option>
-              <option>Express Delivery (1–2 days)</option>
-              <option>Pre-book Delivery (1 month – concession)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Payment Type *</label>
-            <select required>
-              <option value="">-- Select --</option>
-              <option>UPI</option><option>Credit Card</option>
-              <option>Net Banking</option><option>Cash on Delivery</option>
-            </select>
-          </div>
-          <div class="form-group full">
-            <label>Special Instructions</label>
-            <textarea placeholder="Write your special instructions here..."></textarea>
-          </div>
-        </div>
-
-        <label class="terms-row">
-          <div class="checkbox-container">
-            <input type="checkbox" required checked /> 
-          <span class="tag-line-1">I accept all terms and conditions</span>
-        </label></div>
-        <button class="button">Order Now →</button>
-
-      </form>
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- OUR LOCATION -->
-  <section id="our-location">
-    <h2 class="section-title">Our Location</h2>
-    <p class="section-subtitle">Visit us or get in touch directly</p>
-    <div class="location-wrapper">
-
-      <div class="main-branch">
-        <div class="branch-info">
-          <h3>Main Branch — Ahilyanagar</h3>
-           <h3>Contact</h3>
-          <a href="mailto:shravanisherkar@gmail.com" class="contact-link-1"
-            ><img src="../images/gmail-icon.png" height="20px" />
-            shravanisherkar@gmail.com
-          </a>
-          <br>
-          <a href="tel:+919309326631" class="contact-link-1">
-            <img
-              src="../images/contact-page-img/call-icon.png"
-              height="15px"
-              style="margin-top: 10px"
-            />
-            +91 9309326631
-          </a><br>
-          <a
-            href="https://maps.app.goo.gl/vEb9WBWwacu7e1f16"
-            target="_blank"
-            class="contact-link-1"
-          >
-            <img src="../images/contact-page-img/location-icon.png" height="15px" />Ahilyanagar,
-            Maharashtra, India
-          </a>
-        </div>
-        <div class="map-box">
-          <iframe src="https://www.google.com/maps?q=Ahilyanagar,Maharashtra&output=embed"></iframe>
-        </div>
       </div>
-
-      <h3 class="sub-branches-title">Sub Branches</h3>
-      <div class="branches-grid">
-        <div class="branch-card">
-          <img src="../images/contact-page-img/nagpur.jpg" alt="Nagpur">
-          <div class="branch-card-body"><strong>Nagpur</strong>
-           <p>
-            <a href=" https://maps.app.goo.gl/qjwm28AtseAU1RDAA" class="map">Sadar,Nagpur</a></p>
-            <p><a href="tel:+91 8345678920" class="map">+91 8345678920</a></p></div>
-        </div>
-        <div class="branch-card">
-          <img src="../images/contact-page-img/akola.webp" alt="Akola">
-          <div class="branch-card-body"><strong>Akola</strong>
-            <p><a href="https://maps.app.goo.gl/JgNfPUVF85S1QEGs6" class="map">Kachari Chowk</a></p>
-            <p><a href="tel:+91 8345675436" class="map">+91 8345675436</a></p></div>
-        </div>
-        <div class="branch-card">
-          <img src="../images/contact-page-img/mumbai.jpg" alt="Mumbai">
-          <div class="branch-card-body"><strong>Mumbai</strong>
-        <p>    <a href="https://maps.app.goo.gl/6g3VXEhW4yFhviuP8" class="map"> Bandra, Mumbai</a></p>
-            <p><a href="tel:+91 8345678769" class="map">+91 8345678769</a></p></div>
-        </div>
-        <div class="branch-card">
-          <img src="../images/contact-page-img/hingoli.jpg" alt="Hingoli">
-          <div class="branch-card-body"><strong>Hingoli</strong>
-           <p> <a href="https://maps.app.goo.gl/6g3VXEhW4yFhviuP8" class="map">Velapur, Hingoli</a></p>
-            <p><a href="tel:+91 8345672340" class="map">+91 8345672340</a></p></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <hr class="divider" />
-
-  <!-- SEND MESSAGE -->
-  <section id="send-message">
-    <h2 class="section-title">Send us a Message</h2>
-    <div class="card">
-      <form onsubmit="return false;">
-        <div class="form-grid">
-          <div class="form-group">
-            <label>Full Name *</label>
-            <input type="text" placeholder="Enter your name" required />
-          </div>
-          <div class="form-group">
-            <label>Email Address *</label>
-            <input type="email" placeholder="Enter your email" required />
-          </div>
-          <div class="form-group full">
-            <label>Phone Number *</label>
-            <input type="tel" placeholder="Enter phone number" required />
-          </div>
-        </div>
-
-        <div style="margin-top:16px; margin-bottom:8px;">
-          <label style="font-size:13px; font-weight:600; display:block; margin-bottom:8px;">Message Type</label>
-          <div class="msg-type-grid">
-            <button type="button" class="msg-type-btn " onclick="selectType(this)">❓<br>General Inquiry</button>
-            <button type="button" class="msg-type-btn" onclick="selectType(this)">🔧<br>Support</button>
-            <button type="button" class="msg-type-btn" onclick="selectType(this)">🤝<br>Collaboration</button>
-            <button type="button" class="msg-type-btn" onclick="selectType(this)">💬<br>Feedback</button>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Message *</label>
-          <textarea placeholder="Write your message here..." required></textarea>
-        </div>
-        <button class="button">Send Message</button>
-      </form>
-    </div>
-  </section>
+    </details>
+  </div>
 
 </div>
 
+                    <div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Chutneys
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Dry Coconut
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Garlic
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Kokum
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Til
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Javas
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+</div>
+                     
+      <div class="category">
+
+            <!-- Main Item -->
+                  <div>
+                   <label class="product-item-form-head-name">
+    <input type="checkbox">
+    Traditional Items 
+                   </label>&nbsp;&nbsp;
+                  </div>
+
+             <!-- Dropdown -->
+                  <div>
+  <details class="dropdown">
+    <summary>Select Items</summary>
+
+    <div class="items-sequence">
+
+      <label>
+        <input type="checkbox"> Kurdai
+        <input type="number" placeholder="Qty">
+      </label>
+
+      <label>
+        <input type="checkbox"> Shevaya
+        <input type="number" placeholder="Qty">
+      </label>
+
+      <label>
+        <input type="checkbox"> Rice Vadi
+        <input type="number" placeholder="Qty">
+      </label>
+
+      <label>
+        <input type="checkbox"> Farali Chakli
+        <input type="number" placeholder="Qty">
+      </label>
+
+      <label>
+        <input type="checkbox"> Aloo Papadi
+        <input type="number" placeholder="Qty">
+      </label>
+
+    </div>
+
+  </details>
+                  </div>
+
+      </div>
+                      
+     <div class="category">
+
+     <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Snacks Items
+    </label>&nbsp;&nbsp;
+      </div>
+
+     <div>
+     <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Chivda
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Sev
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Namkin
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Chakli
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Bhakarvadi
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+     </details>
+    </div>
+
+    </div>
+    <div class="category">
+
+     <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Khakra
+    </label>&nbsp;&nbsp;
+     </div>
+
+     <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Jeera
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Multigram
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Methi
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Plain
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+     </div>
+
+    </div>
+                       
+    <div class="category">
+
+    <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Masala
+    </label>&nbsp;&nbsp;
+    </div>
+
+     <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Goda
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Garam
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Kala
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Dhana-powder
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Red-chilli
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+     </div>
+
+  </div>
+
+  <div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Ready-mix Powder
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Guava
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Lemon
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Mango
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Pin-apple
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Apple
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+
+</div>
+<div class="category">
+
+  <div>
+    <label class="product-item-form-head-name">
+      <input type="checkbox">
+      Ghee
+    </label>&nbsp;&nbsp;
+  </div>
+
+  <div>
+    <details class="dropdown">
+      <summary>Select Items</summary>
+
+      <div class="items-sequence">
+
+        <label>
+          <input type="checkbox"> Cow ghee
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Buffalo ghee
+          <input type="number" placeholder="Qty">
+        </label>
+
+        <label>
+          <input type="checkbox"> Gir ghee
+          <input type="number" placeholder="Qty">
+        </label>
+
+      </div>
+    </details>
+  </div>
+
+</div>
+                    
+            </div>
+
+               <label for="product-number" class="label-order">Numbers of product Ordered</label><br />
+            <input
+              type="number"
+              id="product-number"
+              placeholder="Enter no of products"
+              class="enter-order" required/><br/>
+              <label for="branch" class="label-order">Select Branch</label>
+             <select id="branch" required class="enter-order" style="display: block;" >
+              <option></option>
+              <option>Nashik</option>
+              <option>Nagpur</option>
+              <option>Mumbai</option>
+              <option>Hingoli</option>
+              <option>Akola</option>
+             </select> <br/>
+              <label for="delivery" class="label-order">Delivery Type *</label>
+             <select id="delivery" required class="enter-order" style="display: block;" >
+              <option></option>
+              <option>Standard Delivery(3-5 days)</option>
+              <option>Express Delivery(1-2 days)</option>
+              <option>Pre-book Delivery(1 month - concession)</option>
+             </select> <br/>
+             <label for="delivery" class="label-order">Payment Type *</label>
+             <select id="delivery" required class="enter-order" style="display: block;" >
+              <option></option>
+              <option>UPI</option>
+              <option>Credit card</option>
+              <option>Net-banking</option>
+              <option>Cash on delivery</option>
+             </select><br/>
+              <label for="userthought" class="label-order">Special Instructions</label><br />
+            <textarea
+              id="userthought"
+              class="enter-order"
+              placeholder="Write your instructions here......." 
+            ></textarea
+            ><br />
+            <input type="checkbox"  required checked/><span class="label-order">I accept all terms and conditions.</span><br/>
+            
+
+         <button class="order-formbtn"><img src="./../images/contact-page-img/right-arrow-cn.svg" alt="right-arrow" height="20px"/> Order Now </button>
+               </form>
+            </div>
+        </div>    
+            
+       </div>
+       </div>
+       <hr/>      
+  <!-- Location -->
+      <div id="our-location-unique" class="unique-location">
+        <div class="title-heading-container">
+          <h1 class="title-heading">Annapurna Hub Main Branch</h1>
+          <span class="title-heading-sub"
+            >Flavours and foods enriched with the same taste ,as if your
+            grandmother's hand</span
+          >
+          <div class="location-main-info-web">
+            <div class="location-container">
+              <div>
+                <div class="location-address">
+                   
+                
+                  <b>Address :</b> <a href="https://www.google.com/maps?q=Ahilyanagar,Maharashtra"
+                  target="_blank" class="link-contact"> Everest Plaza, 3rd Floor Flavour sector,<br /><span
+                    style="margin-left: 70px"
+                    >food area 28 Ahilyanagar 414001,</span
+                  ><br />
+                  <span style="margin-left: 70px">Ahilyanagar,Maharashtra, India</span></a>
+                </div>
+                <div class="location-email">
+                  <b>Email :</b
+                  ><a
+                    href="mailto:annapurnahub05@gmail.com"
+                    class="link-contact"
+                  >
+                    shravanisherkar@gmail.com</a
+                  >
+                </div>
+                <div class="location-no">
+                  <b>Contact Number :</b>
+                  <a href="tel:+91 8345679804" class="link-contact">
+                    +91 9309326631</a
+                  >
+                </div>
+              </div>
+
+            
+            </div>
+            <div>
+              <img
+                src="./../images/home-bg-img1.jpg"
+                alt="contavt-img"
+                height="800px"
+                width="500px"
+                class="contact-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+       <div>
+        <span class="sub-location-section-content">Sub Branches : Find your most native places</span>
+        <div class="sub-location-card-container">
+
+        <div class="sub-location-section-city-content">
+          <img src="./../images/contact-page-img/nagpur.jpg" alt="nagpur-img" height="150px"  width="230px"/>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/><a href="https://www.google.com/maps/place/Sadar,+Nagpur,+Maharashtra/@21.1640837,79.0627833,15z/data=!3m1!4b1!4m6!3m5!1s0x3bd4c0fcf85ee143:0x8a9261908197e622!8m2!3d21.1629554!4d79.0734564!16s%2Fg%2F1jky0rzmj?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" target="_main" style="text-decoration: none;color: black;">Sadar,Nagpur,Maharashtra</a></span>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-icon.svg" alt="contact-icon" height="15px"/><a href="tel:+91 8345678920" class="number-contact">+91 8345678920</a> </span>
+        </div>
+
+        <div class="sub-location-section-city-content">
+          <img src="./../images/contact-page-img/akola.webp" alt="akola-img" height="150px"  width="230px"/>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/><a href="https://www.google.com/maps/search/Kachari+Chowk,Akola,Maharashtra/@20.7110024,76.9975678,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" target="_main" style="text-decoration: none;color: black;"> Kachari Chowk,Akola,Maharashtra</a></span>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-icon.svg" alt="contact-icon" height="15px"/> <a href="tel:+91 8345675436" class="number-contact">+91 8345675436</a> </span>
+        </div>
+
+        <div class="sub-location-section-city-content">
+          <img src="./../images/contact-page-img/mumbai.jpg" alt="mumbai-img" height="150px"  width="230px"/>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/><a href="https://www.google.com/maps/place/Bandra+West,+Mumbai,+Maharashtra/@19.0544779,72.8090547,14z/data=!3m1!4b1!4m6!3m5!1s0x3be7c8e123f8d27b:0x437996b49a236a78!8m2!3d19.0595596!4d72.8295287!16zL20vMDI4bGdt?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" target="_main" style="text-decoration: none;color: black;"> Bandra,Mumbai,Maharashtra</a></span>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-icon.svg" alt="contact-icon" height="15px"/><a href="tel:+91 8345678769" class="number-contact">+91 8345678769</a> </span>
+        </div>
+
+        <div class="sub-location-section-city-content">
+          <img src="./../images/contact-page-img/hingoli.jpg" alt="hingoli-img" height="150px"  width="230px"/>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-page-location.svg" alt="contact-icon" height="15px"/><a href="https://www.google.com/maps/place/Indira+Nagar,+Nashik,+Maharashtra+422009/@19.9741974,73.761938,15z/data=!3m1!4b1!4m6!3m5!1s0x3bddeb3d1e43e14b:0xc1e9dc2e1ad95d1a!8m2!3d19.9723313!4d73.7817225!16s%2Fg%2F1thgfh0b?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" target="_main" style="text-decoration: none;color: black;"> Indira Nagar,Nashik,Maharashtra</a></span>
+          <span class="sub-location-section-content-info"><img src="./../images/contact-page-img/contact-icon.svg" alt="contact-icon" height="15px"/><a href="tel:+91 8345672340" class="number-contact">+91 8345672340</a> </span>
+        </div>
+
+        </div>
+      </div>
+      <br/>
+      <hr />
+
+         <!-- Send a message -->
+      <div id="send-message-unique" class="message-container">
+        <span class="message-heading">Send us a Message</span>
+        <div class="message-section">
+          <form>
+            <label for="username" class="label-text">Full Name *</label><br />
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your name"
+              class="enter-text"
+              required
+            /><br />
+            <label for="useremail" class="label-text">Email Address *</label
+            ><br />
+            <input
+              type="email"
+              id="useremail"
+              placeholder="Enter your email"
+              class="enter-text"
+              required
+            /><br />
+            <label for="userphone" class="label-text">Phone Number *</label><br />
+            <input
+              type="tel"
+              id="userphone"
+              placeholder="Enter your phone number"
+              class="enter-text"
+              required
+            /><br />
+            <div class="inquiry-feedback-sector">
+              <div class="inquiry-circle-align" >
+                <div class="icon-inquiry-feedback-sector">
+                  <img src="./../images/contact-page-img/inquiry.svg" alt="inquiry-icon" height="30px" style="padding: 5px;" />
+                </div>
+               <span class="msg-general-info">General Inquiry</span>
+              </div>
+              <div class="inquiry-circle-align" >
+                <div class="icon-inquiry-feedback-sector-small">
+                  <img src="./../images/contact-page-img/support.svg" alt="support" height="30px" style="padding: 5px;" />
+                </div>
+              <span class="msg-general-info">Support</span>
+              </div>
+              <div class="inquiry-circle-align" >
+                <div class="icon-inquiry-feedback-sector">
+                  <img src="./../images/contact-page-img/collab.svg" alt="collab" height="30px" style="padding: 5px;" />
+                </div>
+              <span class="msg-general-info">Bussiness Collaboration</span>
+              </div>
+              <div class="inquiry-circle-align" >
+                <div class="icon-inquiry-feedback-sector-small">
+                  <img src="./../images/contact-page-img/feedback.svg" alt="feedback" height="30px" style="padding: 5px;" />
+                </div>
+              <span class="msg-general-info">Feedback</span>
+              </div>
+            </div>
+            <br />
+            <label for="usermessage" class="label-text">Message us *</label><br />
+            <textarea
+              id="usermessage"
+              class="enter-text"
+              placeholder="Write your message here regarding above options inquiry,support,collaboration,feedback......."
+              required
+              ></textarea
+            ><br />
+            <button class="message-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
  <!-- ══════════════ FOOTER ══════════════ -->
     <footer class="footer">
       <div class="footer-container">
